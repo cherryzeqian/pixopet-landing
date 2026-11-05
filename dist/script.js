@@ -14,6 +14,7 @@ const videoToggle=document.querySelector('.video-toggle');
 const howVisual=document.querySelector('[data-how-visual]');
 const howCount=document.querySelector('[data-how-count]');
 const howChapters=document.querySelectorAll('[data-how-step]');
+const finalCta=document.querySelector('.final-cta');
 let currentLanguage=localStorage.getItem('pixopet-language')||'en';
 let toastTimer;
 function applyLanguage(language){
@@ -58,5 +59,30 @@ function updateHowFromScroll(){
 }
 window.addEventListener('scroll',updateHowFromScroll,{passive:true});
 window.addEventListener('resize',updateHowFromScroll);
+if(finalCta&&window.matchMedia('(pointer: fine)').matches&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  let pointerFrame;
+  finalCta.addEventListener('pointermove',event=>{
+    cancelAnimationFrame(pointerFrame);
+    pointerFrame=requestAnimationFrame(()=>{
+      const rect=finalCta.getBoundingClientRect();
+      const x=Math.min(1,Math.max(0,(event.clientX-rect.left)/rect.width));
+      const y=Math.min(1,Math.max(0,(event.clientY-rect.top)/rect.height));
+      finalCta.classList.add('is-tracking');
+      finalCta.style.setProperty('--mouse-x',`${(x*100).toFixed(1)}%`);
+      finalCta.style.setProperty('--mouse-y',`${(y*100).toFixed(1)}%`);
+      finalCta.style.setProperty('--shift-x',`${((x-.5)*18).toFixed(1)}px`);
+      finalCta.style.setProperty('--shift-y',`${((y-.5)*14).toFixed(1)}px`);
+      finalCta.style.setProperty('--tilt',`${((x-.5)*3).toFixed(2)}deg`);
+    });
+  });
+  finalCta.addEventListener('pointerleave',()=>{
+    finalCta.classList.remove('is-tracking');
+    finalCta.style.setProperty('--mouse-x','50%');
+    finalCta.style.setProperty('--mouse-y','38%');
+    finalCta.style.setProperty('--shift-x','0px');
+    finalCta.style.setProperty('--shift-y','0px');
+    finalCta.style.setProperty('--tilt','0deg');
+  });
+}
 if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){heroVideo.removeAttribute('autoplay');heroVideo.pause()}
 applyLanguage(currentLanguage);updateVideoToggle();updateHowFromScroll();
