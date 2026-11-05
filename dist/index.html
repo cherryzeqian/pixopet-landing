@@ -1,203 +1,80 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PixoPet 把睡眠、专注和运动变成宠物成长的能量。照顾好自己，也陪它走得更远。">
-  <meta name="theme-color" content="#073f4b">
-  <title>PixoPet — 你的生活，它的冒险</title>
+  <meta name="description" content="PixoPet turns sleep, focus, and movement into energy that helps your pet grow.">
+  <meta name="theme-color" content="#fbfaf6">
+  <title>PixoPet — Your habits grow your pet</title>
   <link rel="icon" href="assets/AppIcon-1024.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="PixoPet 首页">
-      <img src="assets/AppIcon-1024.png" alt="" width="44" height="44">
-      <span>PixoPet</span>
-    </a>
-    <nav aria-label="主导航">
-      <a href="#how">怎么玩</a>
-      <a href="#features">功能</a>
-      <a href="#story">一起成长</a>
-    </nav>
-    <a class="button button-small" href="#join">认识 PixoPet</a>
+    <a class="brand" href="#top" aria-label="PixoPet home"><img src="assets/AppIcon-1024.png" alt="" width="38" height="38"><span>PixoPet</span></a>
+    <nav aria-label="Primary navigation"><a href="#how" data-i18n="navHow">How it works</a><a href="#story" data-i18n="navStory">Our story</a></nav>
+    <div class="header-actions">
+      <div class="language-switch" role="group" aria-label="Language">
+        <button class="language-button is-active" type="button" data-language="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button class="language-button" type="button" data-language="zh" aria-pressed="false">中文</button>
+      </div>
+      <button class="download-button download-button-small" type="button" data-download data-i18n="download">Download</button>
+    </div>
   </header>
 
   <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">YOUR LIFE · THEIR ADVENTURE</p>
-        <h1>你的每一步，<br><em>都是它的冒险。</em></h1>
-        <p class="hero-lede">PixoPet 把睡眠、专注和运动变成宠物成长的能量。照顾好自己，也陪它走得更远。</p>
-        <div class="hero-actions">
-          <a class="button" href="#how">看看怎么玩 <span aria-hidden="true">↓</span></a>
-          <span class="platform-note">为 iPhone 设计 · 真实健康数据只在你授权后使用</span>
+    <section class="hero page-width">
+      <div class="hero-copy">
+        <p class="kicker" data-i18n="heroKicker">A PET THAT GROWS WITH YOU</p>
+        <h1 data-i18n="heroTitle">Your habits grow your pet.</h1>
+        <p class="hero-text" data-i18n="heroText">Sleep, focus, and move. PixoPet turns everyday care into energy for a pet that grows with you.</p>
+        <div class="hero-action-row">
+          <button class="download-button" type="button" data-download><span data-i18n="downloadIphone">Download for iPhone</span></button>
+          <span class="availability" data-i18n="availability">Coming soon</span>
         </div>
       </div>
-
-      <div class="hero-visual reveal" aria-label="PixoPet 猫咪与狗狗角色">
-        <div class="sun"></div>
-        <div class="pet-card pet-card-cat is-active">
-          <img src="assets/cat-together.png" alt="戴橙色毛线帽的灰白猫咪 PixoPet">
-        </div>
-        <div class="pet-card pet-card-dog">
-          <img src="assets/dog-together.png" alt="戴蓝色围巾的黑白狗狗 PixoPet">
-        </div>
-        <div class="pixel-spark spark-one">✦</div>
-        <div class="pixel-spark spark-two">✦</div>
-        <div class="pet-switch" role="group" aria-label="选择宠物">
-          <button class="switch-button is-active" data-pet="cat" aria-pressed="true">猫咪</button>
-          <button class="switch-button" data-pet="dog" aria-pressed="false">狗狗</button>
-        </div>
-      </div>
+      <figure class="hero-image"><img src="assets/cat-together.png" data-alt-en="A grey and white PixoPet cat wearing an orange beanie" data-alt-zh="戴橙色毛线帽的灰白 PixoPet 猫咪" alt="A grey and white PixoPet cat wearing an orange beanie"></figure>
     </section>
 
-    <div class="ticker" aria-hidden="true">
-      <div>睡得更好 <span>✦</span> 专注片刻 <span>✦</span> 动起来 <span>✦</span> 一起升级 <span>✦</span> 睡得更好 <span>✦</span> 专注片刻 <span>✦</span> 动起来 <span>✦</span> 一起升级</div>
-    </div>
-
-    <section id="how" class="how section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">YOU GROW TOGETHER</p>
-        <h2>照顾自己，也是在照顾它。</h2>
-        <p>不需要改变全部生活。从今天能做到的一点点开始。</p>
-      </div>
+    <section id="how" class="how page-width">
+      <div class="section-intro"><p class="kicker" data-i18n="howKicker">HOW IT WORKS</p><h2 data-i18n="howTitle">Live your day. Grow together.</h2></div>
       <div class="steps">
-        <article class="step reveal">
-          <span class="step-number">01</span>
-          <div class="step-art step-art-photo"><img src="assets/brand-icon.png" alt="从生活照片中孵化宠物"></div>
-          <h3>孵化你的伙伴</h3>
-          <p>从一张喜欢的照片开始，创造一只属于你的 PixoPet。</p>
-        </article>
-        <article class="step reveal">
-          <span class="step-number">02</span>
-          <div class="step-art energy-orbit" aria-hidden="true">
-            <img src="assets/sleep@3x.png" alt="">
-            <img src="assets/focus@3x.png" alt="">
-            <img src="assets/move@3x.png" alt="">
-          </div>
-          <h3>把日常变成能量</h3>
-          <p>睡眠、专注和运动，会成为可以分配给宠物的成长经验。</p>
-        </article>
-        <article class="step reveal">
-          <span class="step-number">03</span>
-          <div class="step-art"><img src="assets/journey-journal.png" alt="PixoPet 旅程手账"></div>
-          <h3>解锁新的故事</h3>
-          <p>一起升级、探索旅程，并把每一次成长留在你们的共同记录里。</p>
-        </article>
+        <article class="step"><span>01</span><h3 data-i18n="stepOneTitle">Meet your pet</h3><p data-i18n="stepOneText">Start with a companion that feels like yours.</p></article>
+        <article class="step"><span>02</span><h3 data-i18n="stepTwoTitle">Earn energy</h3><p data-i18n="stepTwoText">Sleep, focus, and movement become growth energy.</p></article>
+        <article class="step"><span>03</span><h3 data-i18n="stepThreeTitle">Grow together</h3><p data-i18n="stepThreeText">Level up and unlock new moments along the way.</p></article>
       </div>
     </section>
 
-    <section class="energy-band">
-      <div class="section-shell energy-grid">
-        <div class="energy-copy reveal">
-          <p class="eyebrow light">REAL LIFE BECOMES ENERGY</p>
-          <h2>三种日常，<br>三种成长能量。</h2>
-          <p>你的健康记录不会只是图表。PixoPet 把它们翻译成能看见、能分配、也更有温度的成长动力。</p>
-          <div class="energy-list">
-            <div><img src="assets/sleep@3x.png" alt=""><span><b>睡眠</b> 让恢复也有意义</span></div>
-            <div><img src="assets/focus@3x.png" alt=""><span><b>专注</b> 把投入变成进步</span></div>
-            <div><img src="assets/move@3x.png" alt=""><span><b>运动</b> 带你们走得更远</span></div>
-          </div>
-        </div>
-        <figure class="energy-image reveal">
-          <img src="assets/health-hero.png" alt="PixoPet 猫咪在月亮上休息，狗狗沿着小路奔跑">
-          <figcaption>每一天，都可以成为你们故事的一页。</figcaption>
-        </figure>
+    <section class="product-moment">
+      <div class="product-image"><img src="assets/health-hero.png" data-alt-en="PixoPet cat resting on the moon while a dog runs along a path" data-alt-zh="PixoPet 猫咪在月亮上休息，狗狗沿着小路奔跑" alt="PixoPet cat resting on the moon while a dog runs along a path"></div>
+      <div class="product-copy">
+        <p class="kicker" data-i18n="energyKicker">REAL LIFE BECOMES ENERGY</p>
+        <h2 data-i18n="energyTitle">Care for yourself. Care for them.</h2>
+        <p data-i18n="energyText">Your health data becomes something you can see and share with your pet—not another chart to worry about.</p>
+        <ul class="energy-list"><li><img src="assets/sleep@3x.png" alt=""><span data-i18n="sleep">Sleep</span></li><li><img src="assets/focus@3x.png" alt=""><span data-i18n="focus">Focus</span></li><li><img src="assets/move@3x.png" alt=""><span data-i18n="move">Move</span></li></ul>
       </div>
     </section>
 
-    <section id="features" class="features section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">A WORLD THAT FEELS LIKE YOURS</p>
-        <h2>不只升级。是一起生活。</h2>
-      </div>
-      <div class="feature-grid">
-        <article class="feature-card feature-wide reveal">
-          <div>
-            <span class="feature-label">成长记录</span>
-            <h3>把小进步，留成大故事。</h3>
-            <p>旅程、明信片和成长节点，让每一次努力都有一个可以回看的地方。</p>
-          </div>
-          <img src="assets/journal-postcard.png" alt="PixoPet 成长明信片插画">
-        </article>
-        <article class="feature-card reveal">
-          <img class="feature-icon" src="assets/action-library.png" alt="">
-          <span class="feature-label">动作收藏</span>
-          <h3>越熟悉，越有自己的小习惯。</h3>
-          <p>在陪伴中解锁更多动作，让宠物的个性慢慢出现。</p>
-        </article>
-        <article class="feature-card reveal">
-          <img class="feature-icon" src="assets/backgrounds.png" alt="">
-          <span class="feature-label">场景与回忆</span>
-          <h3>去更远的地方，看更多风景。</h3>
-          <p>新的背景与旅程奖励，让每个阶段都有新鲜感。</p>
-        </article>
-        <article class="feature-card reveal">
-          <img class="feature-icon" src="assets/achievements.png" alt="">
-          <span class="feature-label">共同成就</span>
-          <h3>庆祝坚持，而不是追求完美。</h3>
-          <p>记录真正完成的成长节点，给日常多一点期待。</p>
-        </article>
+    <section id="story" class="story page-width">
+      <div class="story-heading"><p class="kicker" data-i18n="storyKicker">WHY WE BUILT PIXOPET</p><h2 data-i18n="storyTitle">Health should not feel like another obligation.</h2></div>
+      <div class="story-copy">
+        <p data-i18n="storyOne">We wanted everyday care to feel lighter, more personal, and a little more fun.</p>
+        <p data-i18n="storyTwo">So we made a pet that moves forward when you do—without streak pressure or a perfect-day checklist.</p>
+        <p class="signature">Barney &amp; Zeqian<br><span data-i18n="creators">Creators of PixoPet</span></p>
       </div>
     </section>
 
-    <section id="story" class="story section-shell">
-      <div class="story-card reveal">
-        <img src="assets/AppIcon-1024.png" alt="PixoPet 猫咪和狗狗">
-        <div>
-          <p class="eyebrow">WHY PIXOPET</p>
-          <h2>生活不是任务清单。<br>陪伴也不该是压力。</h2>
-          <p>PixoPet 想做的，是把那些本来就值得肯定的小事——好好睡一觉、认真完成一段专注、出门走一走——变成你和一只小宠物共同经历的故事。</p>
-          <p>它不是用惩罚催促你，而是在你迈出一步时，刚好也向前一步。</p>
-        </div>
-      </div>
-    </section>
+    <section class="privacy page-width"><p class="kicker" data-i18n="privacyKicker">YOUR DATA STAYS YOURS</p><p data-i18n="privacyText">PixoPet uses only the health categories you choose to share. Raw health samples are never shared with friends.</p></section>
 
-    <section class="faq section-shell">
-      <div class="section-heading reveal">
-        <p class="eyebrow">A FEW THINGS YOU MAY WONDER</p>
-        <h2>你可能想知道</h2>
-      </div>
-      <div class="faq-list reveal">
-        <details>
-          <summary>PixoPet 是什么？<span>＋</span></summary>
-          <p>它是一款把现实中的睡眠、专注与运动转化为宠物成长经验的 iPhone 应用。你照顾自己的同时，也在陪宠物成长。</p>
-        </details>
-        <details>
-          <summary>我的健康数据会怎样使用？<span>＋</span></summary>
-          <p>PixoPet 只在你授权后读取相应类别的数据，用于生成成长能量。产品设计以聚合后的日常记录为基础，不需要把原始健康样本上传。</p>
-        </details>
-        <details>
-          <summary>宠物可以做什么？<span>＋</span></summary>
-          <p>宠物会通过你分配的经验升级，并逐步解锁动作、场景、旅程记录与成长奖励。</p>
-        </details>
-        <details>
-          <summary>可以和朋友一起照顾吗？<span>＋</span></summary>
-          <p>可以邀请朋友共同陪伴宠物，并查看团队贡献与一起成长的时间；原始健康指标不会直接分享给其他参与者。</p>
-        </details>
-      </div>
-    </section>
-
-    <section id="join" class="final-cta">
-      <div class="final-inner reveal">
-        <img src="assets/pet-family.png" alt="" width="64" height="64">
-        <p class="eyebrow light">YOUR NEXT LITTLE STEP</p>
-        <h2>准备好一起长大了吗？</h2>
-        <p>今天照顾自己的那一步，也许正是下一段冒险的开始。</p>
-        <button class="button button-light" id="notifyButton">关注 PixoPet 动态</button>
-        <span class="cta-note">PixoPet 正在为正式见面做准备</span>
-      </div>
+    <section id="download" class="final-cta">
+      <img src="assets/pet-family.png" alt="" width="64" height="64">
+      <h2 data-i18n="finalTitle">Take care of yourself.<br>Grow something you love.</h2>
+      <button class="download-button download-button-light" type="button" data-download data-i18n="downloadIphone">Download for iPhone</button>
+      <span data-i18n="availabilityLong">PixoPet is getting ready to meet you.</span>
     </section>
   </main>
 
-  <footer>
-    <a class="brand footer-brand" href="#top"><img src="assets/AppIcon-1024.png" alt="" width="36" height="36"><span>PixoPet</span></a>
-    <p>照顾自己，也陪它长大。</p>
-    <p>© 2026 PixoPet</p>
-  </footer>
-
-  <div class="toast" id="toast" role="status" aria-live="polite">PixoPet 还在准备中。很快见！</div>
+  <footer><a class="brand" href="#top"><img src="assets/AppIcon-1024.png" alt="" width="34" height="34"><span>PixoPet</span></a><p data-i18n="footerLine">Take care of yourself. Grow together.</p><p>© 2026 PixoPet</p></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
 </body>
 </html>
