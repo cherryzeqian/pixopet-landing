@@ -30,5 +30,6 @@
 .signal-intro>p:last-child{max-width:720px;margin-top:38px;font-size:17px;line-height:1.65}
 .signal-chapter h3{font-size:var(--type-feature)}
 .download-section>.cursor-aura{position:absolute;z-index:1}
-.how-art.stage-art{top:22%;left:8%;width:70%;aspect-ratio:1;object-fit:cover;filter:drop-shadow(0 22px 30px rgba(46,48,33,.16))}
+.how-art.stage-art{top:22%;left:8%;width:88.76%;aspect-ratio:1;object-fit:cover;filter:drop-shadow(0 22px 30px rgba(46,48,33,.16))}
 .how-visual{background:transparent}
+@media(max-width:760px){.how-art.stage-art{top:10%;left:50%;width:min(88%,480px);transform:translateX(-50%)}}
