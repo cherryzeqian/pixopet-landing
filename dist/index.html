@@ -2,107 +2,160 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PixoPet turns sleep, focus, and movement into energy for a pet that grows with you.">
-  <meta name="theme-color" content="#f6f8f2">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="PixoPet turns sleep, focus, and movement into energy for a companion that grows with you.">
+  <meta name="theme-color" content="#f5ffff">
   <title>PixoPet — Your life. Their adventure.</title>
   <link rel="icon" href="assets/AppIcon-1024.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="PixoPet home"><img src="assets/AppIcon-1024.png" alt="" width="38" height="38"><span>PixoPet</span></a>
-    <nav aria-label="Primary navigation"><a href="#how" data-i18n="navHow">How it works</a><a href="#film" data-i18n="navFilm">Watch</a><a href="#voices" data-i18n="navVoices">Voices</a></nav>
+    <a class="brand" href="#top" aria-label="PixoPet home"><img src="assets/brand-icon.png" alt="" width="38" height="38"><span>PixoPet</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#how" data-i18n="navHow">How it grows</a>
+      <a href="#activity" data-i18n="navActivity">Daily energy</a>
+      <a href="#journal" data-i18n="navJournal">Shared memories</a>
+    </nav>
     <div class="header-actions">
-      <div class="language-switch" role="group" aria-label="Language"><button class="language-button is-active" type="button" data-language="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button class="language-button" type="button" data-language="zh" aria-pressed="false">中文</button></div>
-      <button class="download-button download-button-small" type="button" data-download data-i18n="download">Download</button>
+      <div class="language-switch" role="group" aria-label="Language"><button class="language-button is-active" data-language="en" type="button">EN</button><span>/</span><button class="language-button" data-language="zh" type="button">中文</button></div>
+      <button class="outline-button header-cta" type="button" data-download><span data-i18n="meetPet">Meet PixoPet</span><b>→</b></button>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
-      <div class="hero-copy page-width" data-reveal>
-        <p class="eyebrow" data-i18n="heroEyebrow">A PET POWERED BY YOU</p>
-        <h1 data-i18n="heroTitle">Your life.<br>Their adventure.</h1>
-        <p class="hero-text" data-i18n="heroText">Sleep. Focus. Move. Your everyday habits become energy for a companion that grows with you.</p>
-        <div class="hero-actions"><button class="download-button" type="button" data-download data-i18n="downloadIphone">Download for iPhone</button><a class="text-button" href="#film"><span class="play-dot" aria-hidden="true">▶</span><span data-i18n="watchFilm">Watch the 28 sec film</span></a></div>
-        <p class="availability" data-i18n="availability">Coming soon on iPhone</p>
-      </div>
-      <div class="hero-media">
-        <div class="energy-float energy-float-sleep"><img src="assets/sleep@3x.png" alt=""><span data-i18n="floatSleep">Last night</span><strong>+78 EXP</strong></div>
-        <div class="energy-float energy-float-focus"><img src="assets/focus@3x.png" alt=""><span data-i18n="floatFocus">Focus done</span><strong>+54 EXP</strong></div>
-        <div class="energy-float energy-float-move"><img src="assets/move@3x.png" alt=""><span data-i18n="floatMove">Today’s steps</span><strong>+380 EXP</strong></div>
-        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/pixopet-hero-poster.png" aria-label="PixoPet cat and dog in an animated world"><source src="assets/pixopet-hero-loop.mp4" type="video/mp4"></video>
-        <button class="video-toggle" type="button" aria-label="Pause background video" aria-pressed="false"><span aria-hidden="true">Ⅱ</span></button>
-      </div>
-    </section>
-
-    <section id="how" class="how-showcase">
-      <div class="showcase-heading page-width" data-reveal><p class="eyebrow">01 — <span data-i18n="howEyebrow">HOW IT WORKS</span></p><h2 data-i18n="howTitle">Care for yourself.<br>Care for them.</h2><p data-i18n="howIntro">You do not need to change everything. Start with one small thing today.</p></div>
-      <div class="journey-switcher page-width" data-reveal>
-        <div class="journey-tabs" role="tablist" aria-label="PixoPet journey steps">
-          <button class="journey-tab is-active" type="button" role="tab" aria-selected="true" data-journey="hatch"><span>01</span><strong data-i18n="journeyHatch">Meet your companion</strong></button>
-          <button class="journey-tab" type="button" role="tab" aria-selected="false" data-journey="energy"><span>02</span><strong data-i18n="journeyEnergy">Turn life into energy</strong></button>
-          <button class="journey-tab" type="button" role="tab" aria-selected="false" data-journey="story"><span>03</span><strong data-i18n="journeyStory">Unlock new stories</strong></button>
-        </div>
-        <div class="journey-stage">
-          <article class="journey-panel journey-hatch is-active" data-journey-panel="hatch"><img src="assets/cat-together.png" alt=""><div><span>01</span><h3 data-i18n="hatchTitle">A companion that feels like yours.</h3><p data-i18n="hatchText">Begin with a pet you will want to come back to.</p></div></article>
-          <article class="journey-panel journey-energy" data-journey-panel="energy"><img src="assets/health-hero.png" alt=""><div class="panel-energy-chips"><span><img src="assets/sleep@3x.png" alt="">+78</span><span><img src="assets/focus@3x.png" alt="">+54</span><span><img src="assets/move@3x.png" alt="">+380</span></div><div><span>02</span><h3 data-i18n="energyPanelTitle">Today becomes growth.</h3><p data-i18n="energyPanelText">Sleep, focus, and movement arrive as energy.</p></div></article>
-          <article class="journey-panel journey-story" data-journey-panel="story"><img src="assets/journey-journal.png" alt=""><div><span>03</span><h3 data-i18n="storyTitle">Every level leaves a memory.</h3><p data-i18n="storyText">New places and moments appear as you grow together.</p></div></article>
+    <section class="hero section-shell">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-copy" data-reveal>
+        <p class="kicker"><span>✦</span> <span data-i18n="heroEyebrow">YOUR LIFE, YOUR SHARED STORY</span></p>
+        <h1 data-i18n="heroTitle">Your every step,<br><em>helps them grow.</em></h1>
+        <p class="lead" data-i18n="heroText">Turn everyday sleep, focus, and movement into a growing adventure with your digital companion.</p>
+        <div class="hero-actions">
+          <button class="primary-button" type="button" data-download><span data-i18n="meetPet">Meet PixoPet</span><b>→</b></button>
+          <button class="play-button" type="button" data-open-film><i>▶</i><span data-i18n="watchDay">See how one day becomes EXP</span></button>
         </div>
       </div>
-    </section>
 
-    <section id="activity" class="activity-section">
-      <div class="activity-heading page-width" data-reveal><p class="eyebrow">02 — <span data-i18n="activityEyebrow">DAILY ENERGY</span></p><h2 data-i18n="activityTitle">The day you live<br>becomes their energy.</h2><p data-i18n="activityText">No extra check-in. PixoPet gently gathers the habits already inside your day.</p></div>
-      <div class="activity-demo page-width" data-reveal>
-        <div class="activity-tabs" role="tablist" aria-label="Daily energy types">
-          <button class="activity-tab is-active" type="button" role="tab" aria-selected="true" data-activity="sleep"><img src="assets/sleep@3x.png" alt=""><span data-i18n="sleep">Sleep</span></button>
-          <button class="activity-tab" type="button" role="tab" aria-selected="false" data-activity="focus"><img src="assets/focus@3x.png" alt=""><span data-i18n="focus">Focus</span></button>
-          <button class="activity-tab" type="button" role="tab" aria-selected="false" data-activity="move"><img src="assets/move@3x.png" alt=""><span data-i18n="move">Move</span></button>
+      <div class="hero-stage" data-hero-stage>
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <div class="hero-blob" aria-hidden="true"></div>
+        <div class="phone phone-hero" aria-label="PixoPet daily energy screen">
+          <div class="phone-notch"></div>
+          <div class="phone-scene"><img src="assets/pixopet-hero-poster.png" alt="PixoPet companion in an illustrated world"><span class="level-pill">⚡ Lv.16</span></div>
+          <div class="phone-body">
+            <div class="phone-title-row"><strong>Today’s energy</strong><span>0 / 417 EXP</span></div>
+            <div class="energy-mini sleep"><img src="assets/sleep@3x.png" alt=""><span>Sleep</span><small>7h 42m</small><b>+78</b></div>
+            <div class="energy-mini focus"><img src="assets/focus@3x.png" alt=""><span>Focus</span><small>2h 15m</small><b>+54</b></div>
+            <div class="energy-mini move"><img src="assets/move@3x.png" alt=""><span>Move</span><small>3,775</small><b>+380</b></div>
+            <div class="available-row"><span>Available</span><strong>3,000 EXP</strong></div>
+            <button type="button">Level Up</button>
+          </div>
         </div>
-        <div class="activity-summary"><span><small data-i18n="todayRecord">Today’s record</small><strong data-activity-record>7h 42m</strong></span><i>→</i><span><small data-i18n="energyEarned">Energy earned</small><strong data-activity-exp>+78 EXP</strong></span></div>
-        <div class="activity-stage" data-activity-stage="sleep">
-          <div class="activity-orbit"><span data-activity-bubble>+26</span></div>
-          <div class="activity-device"><div class="device-top"><b>9:41</b><span>•••</span></div><p data-i18n="todayActivity">TODAY’S ACTIVITY</p><div class="device-ring"><img data-activity-icon src="assets/sleep@3x.png" alt=""><strong data-activity-device-record>7h 42m</strong><small data-i18n="recorded">recorded</small></div><div class="device-result"><span data-i18n="convertedTo">Converted to growth energy</span><strong data-activity-device-exp>+78 EXP</strong></div></div>
-          <img class="activity-pet" src="assets/cat-together.png" alt="">
+        <div class="float-card hero-float sleep-float"><img src="assets/sleep@3x.png" alt=""><span data-i18n="lastSleep">Last night</span><strong>+78 EXP</strong></div>
+        <div class="float-card hero-float focus-float"><img src="assets/focus@3x.png" alt=""><span data-i18n="focusDone">Focus done</span><strong>+54 EXP</strong></div>
+        <div class="level-float"><small>LEVEL UP!</small><strong>LV. 08</strong></div>
+      </div>
+      <a class="scroll-cue" href="#belief"><span data-i18n="scrollStart">Scroll to start the journey</span><i>↓</i></a>
+    </section>
+
+    <section id="belief" class="belief-section section-shell">
+      <p class="mono-label" data-reveal>A LITTLE EVERY DAY</p>
+      <h2 data-reveal data-i18n="beliefTitle">Growth does not have to be loud.<br>Sleep a little earlier, focus for a while, take a few more steps—<br><em>they will remember.</em></h2>
+      <div class="belief-pet" data-parallax="0.08"><img src="assets/brand-slogan.png" alt="PixoPet cat and dog"><span class="spark spark-a">✦</span><span class="spark spark-b">✦</span></div>
+    </section>
+
+    <section id="how" class="how-section section-shell">
+      <div class="section-copy how-copy" data-reveal>
+        <p class="mono-label">01 — HOW IT WORKS</p>
+        <h2 data-i18n="howTitle">Care for yourself.<br>Care for them.</h2>
+        <p data-i18n="howText">You do not need to change everything. Start with one small thing today.</p>
+      </div>
+      <div class="how-steps" role="tablist" aria-label="How PixoPet grows" data-reveal>
+        <button class="how-step is-active" type="button" role="tab" aria-selected="true" data-how="hatch"><span>01</span><div><h3 data-i18n="howHatchTitle">Hatch your companion</h3><p data-i18n="howHatchText">Begin with a favorite photo and create a PixoPet that feels like yours.</p></div></button>
+        <button class="how-step" type="button" role="tab" aria-selected="false" data-how="energy"><span>02</span><div><h3 data-i18n="howEnergyTitle">Turn life into energy</h3><p data-i18n="howEnergyText">Sleep, focus, and movement become EXP you can give to your pet.</p></div></button>
+        <button class="how-step" type="button" role="tab" aria-selected="false" data-how="story"><span>03</span><div><h3 data-i18n="howStoryTitle">Unlock new stories</h3><p data-i18n="howStoryText">Level up, explore, and keep every shared milestone in your journey.</p></div></button>
+      </div>
+      <div class="how-visual" data-reveal>
+        <article class="how-panel hatch-panel is-active" data-how-panel="hatch">
+          <div class="polaroid photo-card"><small>Your Photo</small><img src="assets/onboarding-cat.png" alt="PixoPet cat artwork"></div>
+          <div class="polaroid hatch-card"><img src="assets/AppIcon-1024.png" alt="PixoPet app icon"><small>Next PixoPet</small></div>
+          <span class="visual-caption" data-i18n="hatchCaption">One photo, one new friend</span>
+        </article>
+        <article class="how-panel energy-panel" data-how-panel="energy">
+          <img class="panel-art" src="assets/health-hero.png" alt="PixoPet health energy artwork">
+          <span class="exp-chip sleep-chip"><img src="assets/sleep@3x.png" alt="">+78</span><span class="exp-chip focus-chip"><img src="assets/focus@3x.png" alt="">+54</span><span class="exp-chip move-chip"><img src="assets/move@3x.png" alt="">+380</span>
+          <span class="visual-caption" data-i18n="energyCaption">Today became 512 EXP</span>
+        </article>
+        <article class="how-panel story-panel" data-how-panel="story">
+          <img class="journal-icon" src="assets/journey-journal.png" alt="PixoPet journey journal">
+          <div class="story-strip"><span>1</span><span>2</span><span>3</span></div>
+          <span class="visual-caption" data-i18n="storyCaption">A new journey is unlocked</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="activity" class="activity-section section-shell">
+      <div class="activity-copy" data-reveal>
+        <p class="mono-label">02 — DAILY ENERGY</p>
+        <h2 data-i18n="activityTitle">The day you live<br>becomes their energy.</h2>
+        <p data-i18n="activityText">No extra check-in. PixoPet gently gathers the good habits already inside your day.</p>
+        <div class="activity-tabs" role="tablist" aria-label="Daily energy type">
+          <button class="activity-tab is-active" type="button" role="tab" aria-selected="true" data-activity="sleep"><img src="assets/sleep@3x.png" alt=""><strong data-i18n="sleep">Sleep</strong><small>SLEEP</small></button>
+          <button class="activity-tab" type="button" role="tab" aria-selected="false" data-activity="focus"><img src="assets/focus@3x.png" alt=""><strong data-i18n="focus">Focus</strong><small>FOCUS</small></button>
+          <button class="activity-tab" type="button" role="tab" aria-selected="false" data-activity="move"><img src="assets/move@3x.png" alt=""><strong data-i18n="move">Move</strong><small>MOVE</small></button>
         </div>
+        <div class="activity-summary"><span><small data-i18n="todayRecord">Today’s record</small><strong data-activity-record>7h 42m</strong></span><i>›</i><span><small data-i18n="energyEarned">Energy earned</small><strong data-activity-exp>+78 EXP</strong></span></div>
+      </div>
+      <div class="activity-visual" data-activity-visual="sleep" data-reveal>
+        <div class="activity-halo"></div>
+        <div class="phone phone-activity">
+          <div class="phone-notch"></div><div class="activity-status"><b>9:41</b><span>•••</span></div>
+          <div class="activity-phone-title"><span>‹</span><strong data-i18n="todayActivity">Today’s activity</strong><span>•••</span></div>
+          <div class="date-strip"><span>17</span><strong data-i18n="today">Today</strong><span>19</span></div>
+          <div class="activity-ring"><img data-activity-icon src="assets/sleep@3x.png" alt=""><strong data-activity-phone-record>7h 42m</strong><small data-i18n="recorded">recorded</small></div>
+          <div class="conversion-card"><span data-i18n="converted">Converted to growth energy</span><strong data-activity-phone-exp>+78 EXP</strong></div>
+          <div class="encourage"><strong data-i18n="wellDone">You did well today</strong><span data-i18n="everyBit">Every little bit helps your companion grow.</span></div>
+        </div>
+        <div class="energy-bubble" data-activity-bubble>+26</div><div class="exp-orb">EXP</div>
+        <img class="activity-companion" src="assets/AppIcon-1024.png" alt="PixoPet companion">
       </div>
     </section>
 
-    <section id="film" class="film-section">
-      <div class="film-heading page-width"><p class="eyebrow" data-i18n="filmEyebrow">SEE PIXOPET IN ACTION</p><h2 data-i18n="filmTitle">One day. One pet.<br>A world that grows.</h2><p data-i18n="filmText">A 28-second look at how real life wakes up your PixoPet world.</p></div>
-      <video class="launch-video" controls playsinline preload="metadata" poster="assets/pixopet-launch-poster.png"><source src="assets/pixopet-launch-en.mp4" type="video/mp4"><span data-i18n="videoFallback">Your browser does not support this video.</span></video>
-    </section>
-
-    <section class="world-section">
-      <div class="world-copy page-width"><p class="eyebrow" data-i18n="worldEyebrow">MORE THAN A STREAK</p><h2 data-i18n="worldTitle">A little care unlocks a whole world.</h2><p data-i18n="worldText">Hatch a companion, unlock new actions and places, and watch your shared journey take shape.</p></div>
-      <div class="world-gallery">
-        <figure><img src="assets/action-library.png" data-alt-en="PixoPet action library" data-alt-zh="PixoPet 动作库" alt="PixoPet action library"></figure>
-        <figure><img src="assets/backgrounds.png" data-alt-en="PixoPet world backgrounds" data-alt-zh="PixoPet 世界背景" alt="PixoPet world backgrounds"></figure>
-        <figure><img src="assets/achievements.png" data-alt-en="PixoPet achievements" data-alt-zh="PixoPet 成就" alt="PixoPet achievements"></figure>
+    <section id="grow" class="grow-section section-shell">
+      <div class="grow-heading" data-reveal><p class="mono-label">03 — GROW TOGETHER</p><h2 data-i18n="growTitle">It is not the number growing.<br><em>It is how far you go together.</em></h2></div>
+      <div class="grow-stage" data-reveal>
+        <img class="grow-background" src="assets/pixopet-hero-poster.png" alt="PixoPet adventure world">
+        <div class="level-track"><span>LV. 06</span><span>LV. 07</span><b>LV. 08</b><span>LV. 09</span><span>LV. 10</span></div>
+        <div class="grow-card">
+          <small data-i18n="allocateExp">Allocate today’s EXP</small><div class="pet-name"><img src="assets/AppIcon-1024.png" alt=""><strong>Pixo</strong><span>68 / 198 EXP</span></div>
+          <div class="progress"><i></i></div><div class="level-numbers"><span>LV. 08</span><span data-i18n="toNext">52 EXP to LV. 09</span></div>
+          <button type="button" data-feed-exp><span data-i18n="feedPet">Feed Pixo</span> <b>+20</b></button>
+        </div>
+        <div class="grow-pet"><div class="growth-rays"></div><img src="assets/dog-together.png" alt="PixoPet companion"></div>
+        <div class="unlock-card"><span>NEW</span><img src="assets/notification-hero.png" alt="New PixoPet story"><small>LV. 17</small><strong data-i18n="surprise">A surprise awaits</strong></div>
       </div>
     </section>
 
-    <section id="voices" class="voices-section">
-      <div class="voices-heading page-width"><p class="eyebrow" data-i18n="voicesEyebrow">MEET THE PEOPLE AROUND PIXOPET</p><h2 data-i18n="voicesTitle">Why we keep coming back.</h2></div>
-      <div class="quote-grid page-width">
-        <article class="quote-card quote-featured"><header class="quote-person"><span class="quote-avatar avatar-orange">B</span><span><strong>Barney</strong><small data-i18n="coCreator">Co-creator</small></span></header><blockquote data-i18n="barneyQuoteOne">Most health apps tell you what you should be doing. We wanted to make one that gives you something to care about.</blockquote></article>
-        <article class="quote-card"><header class="quote-person"><span class="quote-avatar avatar-mint">Z</span><span><strong>Zeqian</strong><small data-i18n="coCreator">Co-creator</small></span></header><blockquote data-i18n="zeqianQuoteOne">I wanted health data to feel less like numbers and more like a little world you build together.</blockquote></article>
-        <article class="quote-card"><header class="quote-person"><span class="quote-avatar avatar-violet">P</span><span><strong data-i18n="previewVoice">Early preview</strong><small data-i18n="sampleFeedback">Sample feedback</small></span></header><blockquote data-i18n="previewQuoteOne">It makes a short walk feel like it actually went somewhere.</blockquote></article>
-        <article class="quote-card quote-featured"><header class="quote-person"><span class="quote-avatar avatar-yellow">P</span><span><strong data-i18n="previewVoice">Early preview</strong><small data-i18n="sampleFeedback">Sample feedback</small></span></header><blockquote data-i18n="previewQuoteTwo">I opened it to check my pet—and ended up taking better care of myself too.</blockquote></article>
-        <article class="quote-card"><header class="quote-person"><span class="quote-avatar avatar-blue">P</span><span><strong data-i18n="previewVoice">Early preview</strong><small data-i18n="sampleFeedback">Sample feedback</small></span></header><blockquote data-i18n="previewQuoteThree">The health data disappears. What I notice is that my companion is growing.</blockquote></article>
-        <article class="quote-card"><header class="quote-person"><span class="quote-avatar avatar-pink">P</span><span><strong data-i18n="previewVoice">Early preview</strong><small data-i18n="sampleFeedback">Sample feedback</small></span></header><blockquote data-i18n="previewQuoteFour">The pixel details make every tiny unlock feel surprisingly special.</blockquote></article>
+    <section id="journal" class="journal-section section-shell">
+      <div class="journal-heading" data-reveal><p class="mono-label">04 — YOUR SHARED MEMORIES</p><h2 data-i18n="journalTitle">Every place you visit<br>becomes part of your collection.</h2><p data-i18n="journalText">Adventure posters, milestones, and little daily moments slowly become a journal you share.</p></div>
+      <div class="journal-collage">
+        <article class="memory-card card-main" data-parallax="0.05"><span>MAY 24</span><img src="assets/photos-hero.png" alt="PixoPet shared memory"><small>ADVENTURE 08</small><h3 data-i18n="cloudPost">Cloud Post Office</h3><p data-i18n="cloudCopy">We mailed today’s good mood to our future selves.</p></article>
+        <article class="memory-card card-side" data-parallax="-0.04"><span>JUNE 02</span><img src="assets/cat-together.png" alt="PixoPet cat memory"><h3 data-i18n="forestNap">Forest nap</h3></article>
+        <article class="memory-card card-low" data-parallax="0.08"><img src="assets/dog-together.png" alt="PixoPet dog memory"><span>UNLOCKED</span><h3 data-i18n="moonCamp">Moonlight camp</h3></article>
+        <div class="best-day">BEST<br>DAY!</div><div class="memory-note"><span>“</span><p data-i18n="memoryQuote">We walked far today, but Pixo stayed right beside me.</p><small>— JUNE 12</small></div>
       </div>
-      <p class="sample-note page-width" data-i18n="sampleNote">Preview reactions are draft placeholders and should be replaced with approved tester quotes before launch.</p>
     </section>
 
-    <section id="download" class="final-cta"><div class="final-glow" aria-hidden="true"></div><img src="assets/AppIcon-1024.png" alt="" width="86" height="86"><h2 data-i18n="finalTitle">Take care of yourself.<br>Grow something you love.</h2><p data-i18n="finalText">PixoPet is getting ready to meet you.</p><button class="download-button download-button-light" type="button" data-download data-i18n="downloadIphone">Download for iPhone</button></section>
+    <section id="join" class="join-section section-shell">
+      <div class="join-copy" data-reveal><p class="mono-label">YOUR STORY STARTS HERE</p><h2 data-i18n="joinTitle">Start today.<br>Grow together.</h2><p data-i18n="joinText">Turn every day you care for yourself into a story of growing together.</p><button class="primary-button" type="button" data-download><span data-i18n="followNext">Follow PixoPet’s next step</span><b>→</b></button><small data-i18n="comingSoon">Product in progress · not publicly available yet</small></div>
+      <div class="join-visual" data-mouse-glow><div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div><img src="assets/cat-together.png" alt="PixoPet companion"><span class="join-spark one">✦</span><span class="join-spark two">✦</span></div>
+    </section>
   </main>
 
-  <footer><a class="brand" href="#top"><img src="assets/AppIcon-1024.png" alt="" width="34" height="34"><span>PixoPet</span></a><p data-i18n="footerLine">Your life. Their adventure.</p><p>© 2026 PixoPet</p></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <footer><a class="brand" href="#top"><img src="assets/brand-icon.png" alt="" width="36" height="36"><span>PixoPet</span></a><p data-i18n="footerLine">Care for yourself. Care for them.</p><div class="footer-links"><a href="#how" data-i18n="navHow">How it grows</a><a href="#activity" data-i18n="navActivity">Daily energy</a><a href="#journal" data-i18n="navJournal">Shared memories</a></div><p>© 2026 PixoPet</p></footer>
+
+  <div class="film-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="PixoPet launch film"><button class="film-close" type="button" aria-label="Close film">×</button><video controls playsinline poster="assets/pixopet-launch-poster.png"><source src="assets/pixopet-launch-en.mp4" type="video/mp4"></video></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
 </body>
 </html>
