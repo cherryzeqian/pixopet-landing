@@ -22,6 +22,7 @@
 
 /* Unified type scale */
 :root{--type-display:clamp(58px,9vw,130px);--type-section:clamp(54px,5.2vw,82px);--type-feature:clamp(78px,7vw,112px)}
+.how-overview{padding-block:0}
 .mono-label,.eyebrow,.how-step>span,.story-dots span,.photo-stack figcaption,.signal-visual small,.signal-chapter>span,.signal-chapter>small,.signal-chapter b,.memory-card span,.memory-card small,.memory-note small,.best-day,.voices-kicker{font-family:"Plus Jakarta","Source Han Sans",sans-serif!important;font-weight:700}
 .hero h1{font-size:var(--type-display)}
 .section-copy h2,.signal-intro h2,.journal-heading h2{font-size:var(--type-section);line-height:.99;letter-spacing:-.07em}
