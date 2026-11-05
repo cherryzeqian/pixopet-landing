@@ -7,6 +7,13 @@ const translations={
   }
 };
 
+translations.en.signalKicker='02 — DAILY ENERGY';
+translations.en.signalTitle='The day you live<br>becomes their<br>energy.';
+translations.en.signalIntro='No extra check-in. PixoPet gently gathers the good habits already inside your day.';
+translations.zh.signalKicker='02 — 日常能量';
+translations.zh.signalTitle='你度过的一天，<br>成为它成长的<br>能量。';
+translations.zh.signalIntro='不需要额外打卡。PixoPet 会轻轻收集你日常里本来就存在的好习惯。';
+
 const languageButtons=document.querySelectorAll('[data-language]');
 const translatable=document.querySelectorAll('[data-i18n]');
 const howTabs=document.querySelectorAll('[data-how]');
@@ -20,6 +27,7 @@ const videoToggle=document.querySelector('.video-toggle');
 const filmModal=document.querySelector('.film-modal');
 const filmVideo=filmModal.querySelector('video');
 const toast=document.querySelector('#toast');
+const cursorAura=document.querySelector('.cursor-aura');
 let currentLanguage=localStorage.getItem('pixopet-language')||'en';
 let toastTimer;
 
@@ -52,6 +60,16 @@ signalChapters.forEach(chapter=>signalObserver.observe(chapter));
 let motionFrame;
 function updateParallax(){cancelAnimationFrame(motionFrame);motionFrame=requestAnimationFrame(()=>{document.querySelectorAll('[data-parallax]').forEach(element=>{const rect=element.getBoundingClientRect();const progress=innerHeight*.5-(rect.top+rect.height*.5);const speed=Number(element.dataset.parallax)||0;element.style.setProperty('--parallax-y',`${Math.max(-80,Math.min(80,progress*speed))}px`)})})}
 
+function initCursorAura(){
+  if(!cursorAura||!matchMedia('(pointer: fine)').matches||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  let targetX=innerWidth*.5,targetY=innerHeight*.38,currentX=targetX,currentY=targetY,auraFrame;
+  const render=()=>{currentX+=(targetX-currentX)*.115;currentY+=(targetY-currentY)*.115;cursorAura.style.transform=`translate3d(${currentX}px,${currentY}px,0)`;if(Math.abs(targetX-currentX)>.2||Math.abs(targetY-currentY)>.2)auraFrame=requestAnimationFrame(render);else auraFrame=0};
+  const move=event=>{targetX=event.clientX;targetY=event.clientY;cursorAura.classList.add('is-active');if(!auraFrame)auraFrame=requestAnimationFrame(render)};
+  addEventListener('pointermove',move,{passive:true});
+  document.documentElement.addEventListener('pointerleave',()=>cursorAura.classList.remove('is-active'));
+  addEventListener('blur',()=>cursorAura.classList.remove('is-active'));
+}
+
 languageButtons.forEach(button=>button.addEventListener('click',()=>applyLanguage(button.dataset.language)));
 howTabs.forEach(tab=>tab.addEventListener('click',()=>setHowStep(tab.dataset.how)));
 document.querySelectorAll('[data-download]').forEach(button=>button.addEventListener('click',showDownloadMessage));
@@ -62,4 +80,4 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape')closeFilm()}
 function closeFilm(){filmModal.classList.remove('is-open');filmModal.setAttribute('aria-hidden','true');filmVideo.pause()}
 videoToggle.addEventListener('click',()=>{if(heroVideo.paused){heroVideo.play();videoToggle.textContent='Ⅱ';videoToggle.setAttribute('aria-label','Pause background video')}else{heroVideo.pause();videoToggle.textContent='▶';videoToggle.setAttribute('aria-label','Play background video')}});
 addEventListener('scroll',updateParallax,{passive:true});
-applyLanguage(currentLanguage);setHowStep('story');setSignal('sleep');updateParallax();
+applyLanguage(currentLanguage);setHowStep('story');setSignal('sleep');updateParallax();initCursorAura();
