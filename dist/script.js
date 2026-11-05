@@ -29,8 +29,7 @@ const toast=document.querySelector('#toast');
 const hero=document.querySelector('.hero');
 const heroStage=document.querySelector('[data-hero-stage]');
 const heroFloats=document.querySelectorAll('.hero-float');
-const howTabs=document.querySelectorAll('[data-how]');
-const howPanels=document.querySelectorAll('[data-how-panel]');
+const howSections=document.querySelectorAll('.how-section');
 const activityTabs=document.querySelectorAll('[data-activity]');
 const activityVisual=document.querySelector('[data-activity-visual]');
 const activityRecord=document.querySelector('[data-activity-record]');
@@ -63,9 +62,9 @@ function showDownloadMessage(){
   toastTimer=setTimeout(()=>toast.classList.remove('is-visible'),2600);
 }
 
-function setHowStep(step){
-  howTabs.forEach(tab=>{const active=tab.dataset.how===step;tab.classList.toggle('is-active',active);tab.setAttribute('aria-selected',String(active))});
-  howPanels.forEach(panel=>panel.classList.toggle('is-active',panel.dataset.howPanel===step));
+function setHowStep(section,step){
+  section.querySelectorAll('[data-how]').forEach(tab=>{const active=tab.dataset.how===step;tab.classList.toggle('is-active',active);tab.setAttribute('aria-selected',String(active))});
+  section.querySelectorAll('[data-how-panel]').forEach(panel=>panel.classList.toggle('is-active',panel.dataset.howPanel===step));
 }
 
 const activityData={
@@ -97,7 +96,7 @@ document.querySelectorAll('[data-open-film]').forEach(button=>button.addEventLis
 document.querySelector('.film-close').addEventListener('click',closeFilm);
 filmModal.addEventListener('click',event=>{if(event.target===filmModal)closeFilm()});
 document.addEventListener('keydown',event=>{if(event.key==='Escape')closeFilm()});
-howTabs.forEach(tab=>tab.addEventListener('click',()=>setHowStep(tab.dataset.how)));
+howSections.forEach(section=>section.querySelectorAll('[data-how]').forEach(tab=>tab.addEventListener('click',()=>setHowStep(section,tab.dataset.how))));
 activityTabs.forEach(tab=>tab.addEventListener('click',()=>setActivity(tab.dataset.activity)));
 document.querySelector('[data-feed-exp]').addEventListener('click',event=>event.currentTarget.closest('.grow-card').classList.toggle('is-fed'));
 
