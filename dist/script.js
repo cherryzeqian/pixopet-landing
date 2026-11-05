@@ -64,8 +64,11 @@ function initCursorAura(){
   if(!cursorAura||!matchMedia('(pointer: fine)').matches||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
   let targetX=innerWidth*.5,targetY=innerHeight*.38,currentX=targetX,currentY=targetY,auraFrame;
   const render=()=>{currentX+=(targetX-currentX)*.115;currentY+=(targetY-currentY)*.115;cursorAura.style.transform=`translate3d(${currentX}px,${currentY}px,0)`;if(Math.abs(targetX-currentX)>.2||Math.abs(targetY-currentY)>.2)auraFrame=requestAnimationFrame(render);else auraFrame=0};
-  const move=event=>{targetX=event.clientX;targetY=event.clientY;cursorAura.classList.add('is-active');if(!auraFrame)auraFrame=requestAnimationFrame(render)};
+  let pointerX=targetX,pointerY=targetY;
+  const updateAuraArea=()=>{const underPointer=document.elementFromPoint(pointerX,pointerY);const area=underPointer&&underPointer.closest('.hero,.download-section');cursorAura.classList.toggle('is-active',Boolean(area));if(!area)return;const changedArea=cursorAura.parentElement!==area;if(changedArea)area.prepend(cursorAura);const rect=area.getBoundingClientRect();targetX=pointerX-rect.left;targetY=pointerY-rect.top;if(changedArea){currentX=targetX;currentY=targetY}if(!auraFrame)auraFrame=requestAnimationFrame(render)};
+  const move=event=>{pointerX=event.clientX;pointerY=event.clientY;updateAuraArea()};
   addEventListener('pointermove',move,{passive:true});
+  addEventListener('scroll',updateAuraArea,{passive:true});
   document.documentElement.addEventListener('pointerleave',()=>cursorAura.classList.remove('is-active'));
   addEventListener('blur',()=>cursorAura.classList.remove('is-active'));
 }
