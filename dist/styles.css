@@ -33,3 +33,38 @@
 .how-art.stage-art{top:22%;left:8%;width:88.76%;aspect-ratio:1;object-fit:cover;filter:drop-shadow(0 22px 30px rgba(46,48,33,.16))}
 .how-visual{background:transparent}
 @media(max-width:760px){.how-art.stage-art{top:10%;left:50%;width:min(88%,480px);transform:translateX(-50%)}}
+
+/* PixoPet Design System V3.1 — synced from the iOS semantic tokens. */
+@font-face{font-family:"Lora";src:url("assets/fonts/Lora-VF.ttf") format("truetype");font-weight:400 700;font-display:swap}
+@font-face{font-family:"Source Han Serif";src:url("assets/fonts/SourceHanSerifSC-VF.woff2") format("woff2");font-weight:200 900;font-display:swap}
+:root{
+  --background:#f5ffff;--surface:#fff;--surface-secondary:#fff2d8;--surface-tertiary:#e0f4f1;
+  --energy-row:#c8edec;--text-primary:#2e3021;--text-secondary:#737a6b;--text-tertiary:#5d7f7e;
+  --border:#000;--border-strong:#7dcdcb;--accent:#04b1ad;--accent-soft:#e0f4f1;--accent-muted:#7dcdcb;
+  --tab-bar:#6fcdc7;--reward:#ffcf30;--focus-token:#00a1a1;--focus-soft:#e0f4f1;
+  --sleep-token:#6e3bf0;--sleep-soft:#f1ecfe;--movement-token:#ed4740;--movement-soft:#fde6e3;
+  --space-xs:4px;--space-sm:8px;--space-md:12px;--space-lg:16px;--space-screen:20px;--space-xl:24px;--space-xxl:32px;
+  --radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;
+  --page:var(--background);--paper:var(--background);--paper-warm:var(--surface-secondary);--ink:var(--text-primary);
+  --copy:var(--text-secondary);--muted:var(--text-tertiary);--line:color-mix(in srgb,var(--text-primary) 13%,transparent);
+  --teal:var(--accent);--teal-dark:var(--focus-token);--teal-soft:var(--surface-tertiary);--cream:var(--surface-secondary);
+  --yellow:var(--reward);--sleep:var(--sleep-token);--focus:var(--focus-token);--move:var(--movement-token)
+}
+body{background:var(--background);color:var(--text-primary)}
+html,body{overflow-x:hidden}
+.site-header{background:color-mix(in srgb,var(--background) 84%,transparent);border-bottom-color:color-mix(in srgb,var(--border-strong) 35%,transparent)}
+.hero,.download-section{background:radial-gradient(circle at 52% 34%,var(--surface) 0,var(--background) 48%,var(--surface-tertiary) 100%)}
+.how-overview,.signal-story{background:var(--background)}
+.journal-section{background:var(--surface-secondary)}
+.brand img,.primary-button,.download-button,.header-download{border-radius:var(--radius-sm)}
+.how-visual{border-radius:var(--radius-xl)}
+.quote-card{padding:var(--space-xl);border-radius:var(--radius-xl)}
+.memory-card,.memory-note{border-radius:var(--radius-md)}
+.memory-note{background:var(--surface-secondary)}
+.play-dot{background:var(--surface)}
+.download-button{background:var(--surface);color:var(--text-primary)}
+.mono-label,.eyebrow,.how-step>span,.story-dots span,.photo-stack figcaption,.signal-visual small,.signal-chapter>span,.signal-chapter>small,.signal-chapter b,.memory-card span,.memory-card small,.memory-note small,.best-day,.voices-kicker{font-family:"IBM Plex Mono","Source Han Sans",monospace!important;font-weight:600}
+.journal-heading h2,.memory-note p,.quote-card>p{font-family:"Lora","Source Han Serif",serif}
+.signal-chapter[data-signal="sleep"]>span{color:var(--sleep-token)}
+.signal-chapter[data-signal="focus"]>span{color:var(--focus-token)}
+.signal-chapter[data-signal="move"]>span{color:var(--movement-token)}

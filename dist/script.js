@@ -46,9 +46,9 @@ function showDownloadMessage(){toast.textContent=translations[currentLanguage].t
 function setHowStep(step){howTabs.forEach(tab=>{const active=tab.dataset.how===step;tab.classList.toggle('is-active',active);tab.setAttribute('aria-selected',String(active))});howPanels.forEach(panel=>panel.classList.toggle('is-active',panel.dataset.howPanel===step))}
 
 const signalData={
-  sleep:{color:'#7b68ee',icon:'assets/sleep@3x.png',label:'REST + ENERGY'},
-  focus:{color:'#04b1ad',icon:'assets/focus@3x.png',label:'TIME + GROWTH'},
-  move:{color:'#ed694f',icon:'assets/move@3x.png',label:'STEPS + ADVENTURE'}
+  sleep:{color:'#6e3bf0',icon:'assets/sleep@3x.png',label:'REST + ENERGY'},
+  focus:{color:'#00a1a1',icon:'assets/focus@3x.png',label:'TIME + GROWTH'},
+  move:{color:'#ed4740',icon:'assets/move@3x.png',label:'STEPS + ADVENTURE'}
 };
 function setSignal(type){const data=signalData[type];if(!data)return;signalChapters.forEach(chapter=>chapter.classList.toggle('is-active',chapter.dataset.signal===type));signalVisual.dataset.signalVisual=type;signalVisual.style.setProperty('--signal-color',data.color);signalIcon.src=data.icon;signalLabel.textContent=data.label;signalIcon.animate([{transform:'scale(.82) rotate(-8deg)',opacity:.4},{transform:'scale(1) rotate(0)',opacity:1}],{duration:500,easing:'cubic-bezier(.22,.78,.2,1)'})}
 
