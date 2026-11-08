@@ -129,7 +129,7 @@ function initPointerPetsPilot(){
 
 function initCenteredSectionSnap(){
   const enabled=matchMedia('(min-width:761px) and (pointer:fine) and (prefers-reduced-motion:no-preference)');
-  const selector='.hero,.how-overview,.signal-intro,.signal-chapter,.journal-section,.voices-section,.download-section';
+  const selector='.hero,.film-section,.how-overview,.signal-intro,.signal-chapter,.journal-section,.voices-section,.download-section';
   let settleTimer=0,isSettling=false;
   const settle=()=>{
     if(!enabled.matches||isSettling)return;
