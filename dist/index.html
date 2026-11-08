@@ -7,23 +7,24 @@
   <meta name="theme-color" content="#f5ffff">
   <title>PixoPet — Your life. Their adventure.</title>
   <link rel="icon" href="assets/AppIcon-1024.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=28">
 </head>
 <body>
   <div class="cursor-aura" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="PixoPet home"><img src="assets/brand-icon.png" alt="" width="38" height="38"><span>PixoPet</span></a>
     <nav aria-label="Primary navigation"><a href="#how" data-i18n="navHow">How it works</a><a href="#signals" data-i18n="navSignals">Daily energy</a><a href="#voices" data-i18n="navVoices">Voices</a></nav>
-    <div class="header-actions"><div class="language-switch" role="group" aria-label="Language"><button class="language-button is-active" data-language="en" type="button">EN</button><span>/</span><button class="language-button" data-language="zh" type="button">中文</button></div><button class="header-download" type="button" data-download><span data-i18n="download">Download</span></button></div>
+    <div class="header-actions"><div class="language-switch" role="group" aria-label="Language"><button class="language-button is-active" data-language="en" type="button">EN</button><span>/</span><button class="language-button" data-language="zh" type="button">中文</button></div><button class="header-download" type="button" data-waitlist><span data-i18n="download">Join waitlist</span></button></div>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="ambient ambient-left"></div><div class="ambient ambient-right"></div>
+      <div class="pointer-pets-pilot" data-pointer-pets data-pointer-state="center" aria-hidden="true"><div class="pointer-pets-atlas" data-pointer-pets-atlas></div></div>
       <div class="hero-copy" data-reveal>
         <h1 data-i18n="heroTitle">Your life.<br>Their adventure.</h1>
         <p class="hero-lead" data-i18n="heroText">Sleep. Focus. Move. Your everyday habits become energy<br>for a companion that grows with you.</p>
-        <div class="hero-actions"><button class="primary-button" type="button" data-download data-i18n="downloadIphone">Download for iPhone</button><button class="film-button" type="button" data-open-film><span class="play-dot">▶</span><strong data-i18n="watchFilm">Watch the 28 sec film</strong></button></div>
+        <div class="hero-actions"><button class="primary-button" type="button" data-waitlist data-i18n="downloadIphone">Join the iPhone waitlist</button><button class="film-button" type="button" data-open-film><span class="play-dot">▶</span><strong data-i18n="watchFilm">Watch the 28 sec film</strong></button></div>
       </div>
       <div class="hero-media" data-reveal><video autoplay muted loop playsinline poster="assets/pixopet-hero-poster.png" aria-label="PixoPet companion adventure"><source src="assets/pixopet-hero-loop.mp4" type="video/mp4"></video><button class="video-toggle" type="button" aria-label="Pause background video">Ⅱ</button></div>
     </section>
@@ -80,12 +81,12 @@
       </div>
     </section>
 
-    <section id="download" class="download-section"><div class="final-glow"></div><img src="assets/AppIcon-1024.png" alt="PixoPet app icon"><h2 data-i18n="downloadTitle">Take care of yourself.<br>Grow something you love.</h2><p data-i18n="downloadText">PixoPet is getting ready to meet you.</p><button class="download-button" type="button" data-download data-i18n="downloadIphone">Download for iPhone</button></section>
+    <section id="download" class="download-section"><div class="final-glow"></div><img src="assets/AppIcon-1024.png" alt="PixoPet app icon"><h2 data-i18n="downloadTitle">Be the first to meet PixoPet.</h2><p data-i18n="downloadText">Join the iPhone waitlist and we will let you know when PixoPet is ready.</p><form class="waitlist-form" data-waitlist-form><label class="sr-only" for="waitlist-email" data-i18n="emailLabel">Email address</label><input id="waitlist-email" class="waitlist-input" data-waitlist-email type="email" name="email" autocomplete="email" required placeholder="Email address" data-i18n-placeholder="emailPlaceholder"><button class="waitlist-submit" type="submit" data-i18n="waitlistSubmit">Join waitlist</button></form><p class="waitlist-note" data-i18n="waitlistNote">Preview only — your email stays on this device until the mailing service is connected.</p></section>
   </main>
 
   <footer><a class="brand brand-light" href="#top"><img src="assets/brand-icon.png" alt="" width="36" height="36"><span>PixoPet</span></a><p>© 2026 PixoPet</p></footer>
   <div class="film-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="PixoPet launch film"><button class="film-close" type="button" aria-label="Close film">×</button><video controls playsinline poster="assets/pixopet-launch-poster.png"><source src="assets/pixopet-launch-en.mp4" type="video/mp4"></video></div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
+  <script src="script.js?v=25"></script>
 </body>
 </html>

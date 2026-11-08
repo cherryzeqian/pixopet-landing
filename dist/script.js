@@ -1,9 +1,9 @@
 const translations={
   en:{
-    title:'PixoPet — Your life. Their adventure.',description:'PixoPet turns sleep, focus, and movement into energy for a companion that grows with you.',navHow:'How it works',navSignals:'Daily energy',navVoices:'Voices',download:'Download',downloadIphone:'Download for iPhone',heroEyebrow:'A PET POWERED BY YOU',heroTitle:'Your life.<br>Their adventure.',heroText:'Sleep. Focus. Move. Your everyday habits become energy<br>for a companion that grows with you.',watchFilm:'Watch the 28 sec film',comingSoon:'Coming soon on iPhone',howTitle:'Care for<br>yourself.<br>Care for<br>them.',howText:'You do not need to change everything. Start with one small thing today.',hatchTitle:'Hatch your companion',hatchText:'Begin with a favorite photo and create a PixoPet that feels like yours.',energyTitle:'Turn life into energy',energyText:'Sleep, focus, and movement become EXP you can give to your pet.',storyTitle:'Unlock new stories',storyText:'Level up, explore, and keep every shared milestone in your journey.',hatchCaption:'One photo, one new friend',energyCaption:'Today became 512 EXP',storyCaption:'A new journey is unlocked',signalTitle:'Your day becomes<br>their energy.',signalIntro:'Three everyday signals. One growing companion.',sleepKicker:'RECOVER',sleepTitle:'Sleep',sleepText:'A good night becomes energy your pet can wake up with.',sleepTag:'REST + RECHARGE',focusKicker:'CREATE',focusTitle:'Focus',focusText:'Focused minutes move your companion closer to the next level.',focusTag:'TIME + GROWTH',moveKicker:'EXPLORE',moveTitle:'Move',moveText:'Every walk gives your pet more of the world to discover.',moveTag:'STEPS + ADVENTURE',journalTitle:'Every place you visit<br>becomes part of your<br>collection.',journalText:'Adventure posters, milestones, and little daily moments slowly become a journal you share.',cloudPost:'Cloud Post Office',cloudCopy:'We mailed today’s good mood to our future selves.',moonCamp:'Moonlight camp',forestNap:'Forest nap',memoryQuote:'We walked far today, but Pixo stayed right beside me.',voicesKicker:'MEET THE PEOPLE AROUND PIXOPET',voicesTitle:'Why we keep coming back.',coCreator:'Co-creator',earlyPreview:'Early preview',sampleFeedback:'Sample feedback',quoteBarney:'Most health apps tell you what you should be doing. We wanted to make one that gives you something to care about.',quoteZeqian:'I wanted health data to feel less like numbers and more like a little world you build together.',quoteWalk:'It makes a short walk feel like it actually went somewhere.',quoteCare:'I opened it to check my pet—and ended up taking better care of myself too.',quoteData:'The health data disappears. What I notice is that my companion is growing.',quoteDetails:'The pixel details make every tiny unlock feel surprisingly special.',previewNote:'Preview reactions are draft placeholders and should be replaced with approved tester quotes before launch.',downloadTitle:'Take care of yourself.<br>Grow something you love.',downloadText:'PixoPet is getting ready to meet you.',toast:'PixoPet for iPhone is coming soon.'
+    title:'PixoPet — Your life. Their adventure.',description:'PixoPet turns sleep, focus, and movement into energy for a companion that grows with you.',navHow:'How it works',navSignals:'Daily energy',navVoices:'Voices',download:'Join waitlist',downloadIphone:'Join the iPhone waitlist',heroEyebrow:'A PET POWERED BY YOU',heroTitle:'Your life.<br>Their adventure.',heroText:'Sleep. Focus. Move. Your everyday habits become energy<br>for a companion that grows with you.',watchFilm:'Watch the 28 sec film',comingSoon:'Coming soon on iPhone',howTitle:'Care for<br>yourself.<br>Care for<br>them.',howText:'You do not need to change everything. Start with one small thing today.',hatchTitle:'Hatch your companion',hatchText:'Begin with a favorite photo and create a PixoPet that feels like yours.',energyTitle:'Turn life into energy',energyText:'Sleep, focus, and movement become EXP you can give to your pet.',storyTitle:'Unlock new stories',storyText:'Level up, explore, and keep every shared milestone in your journey.',hatchCaption:'One photo, one new friend',energyCaption:'Today became 512 EXP',storyCaption:'A new journey is unlocked',signalTitle:'Your day becomes<br>their energy.',signalIntro:'Three everyday signals. One growing companion.',sleepKicker:'RECOVER',sleepTitle:'Sleep',sleepText:'A good night becomes energy your pet can wake up with.',sleepTag:'REST + RECHARGE',focusKicker:'CREATE',focusTitle:'Focus',focusText:'Focused minutes move your companion closer to the next level.',focusTag:'TIME + GROWTH',moveKicker:'EXPLORE',moveTitle:'Move',moveText:'Every walk gives your pet more of the world to discover.',moveTag:'STEPS + ADVENTURE',journalTitle:'Every place you visit<br>becomes part of your<br>collection.',journalText:'Adventure posters, milestones, and little daily moments slowly become a journal you share.',cloudPost:'Cloud Post Office',cloudCopy:'We mailed today’s good mood to our future selves.',moonCamp:'Moonlight camp',forestNap:'Forest nap',memoryQuote:'We walked far today, but Pixo stayed right beside me.',voicesKicker:'MEET THE PEOPLE AROUND PIXOPET',voicesTitle:'Why we keep coming back.',coCreator:'Co-creator',earlyPreview:'Early preview',sampleFeedback:'Sample feedback',quoteBarney:'Most health apps tell you what you should be doing. We wanted to make one that gives you something to care about.',quoteZeqian:'I wanted health data to feel less like numbers and more like a little world you build together.',quoteWalk:'It makes a short walk feel like it actually went somewhere.',quoteCare:'I opened it to check my pet—and ended up taking better care of myself too.',quoteData:'The health data disappears. What I notice is that my companion is growing.',quoteDetails:'The pixel details make every tiny unlock feel surprisingly special.',previewNote:'Preview reactions are draft placeholders and should be replaced with approved tester quotes before launch.',downloadTitle:'Be the first to meet PixoPet.',downloadText:'Join the iPhone waitlist and we will let you know when PixoPet is ready.',emailLabel:'Email address',emailPlaceholder:'Email address',waitlistSubmit:'Join waitlist',waitlistNote:'Preview only — your email stays on this device until the mailing service is connected.',waitlistSaved:'Saved on this device. Email delivery is not connected yet.'
   },
   zh:{
-    title:'PixoPet — 你的生活，它的冒险',description:'PixoPet 把睡眠、专注和运动变成宠物成长能量。',navHow:'它如何成长',navSignals:'日常能量',navVoices:'用户声音',download:'下载',downloadIphone:'下载 iPhone 版',heroEyebrow:'由你的生活驱动的伙伴',heroTitle:'你的生活。<br>它的冒险。',heroText:'睡眠、专注、运动。每天的习惯都会成为能量，<br>陪伴你的数字宠物一起成长。',watchFilm:'观看 28 秒短片',comingSoon:'iPhone 版即将推出',howTitle:'照顾自己，<br>也是在<br>照顾它。',howText:'不需要改变全部生活。从今天能做到的一点点开始。',hatchTitle:'孵化你的伙伴',hatchText:'从一张喜欢的照片开始，创造一只属于你的 PixoPet。',energyTitle:'把日常变成能量',energyText:'睡眠、专注和运动，会成为可以分配给宠物的成长经验。',storyTitle:'解锁新的故事',storyText:'一起升级、探索旅程，并留下每一次共同成长。',hatchCaption:'一张照片，一个新朋友',energyCaption:'今天积累了 512 EXP',storyCaption:'新的旅程已经解锁',signalTitle:'你度过的一天，<br>是它成长的能量。',signalIntro:'三种日常信号，一个不断成长的伙伴。',sleepKicker:'恢复',sleepTitle:'睡眠',sleepText:'一个好觉，会成为它醒来时收到的成长能量。',sleepTag:'休息 + 充能',focusKicker:'创造',focusTitle:'专注',focusText:'每一分钟专注，都让它更靠近下一个等级。',focusTag:'时间 + 成长',moveKicker:'探索',moveTitle:'运动',moveText:'每一次步行，都让它发现更多新的世界。',moveTag:'步数 + 冒险',journalTitle:'走过的每一站，<br>都成为只属于<br>你们的收藏。',journalText:'冒险海报、成长瞬间和日常碎片，会慢慢长成一本共同回忆。',cloudPost:'云上邮局',cloudCopy:'我们把今天的好心情，寄给了未来。',moonCamp:'月光露营地',forestNap:'森林午睡',memoryQuote:'今天走了很远，但 Pixo 一直在身边。',voicesKicker:'认识 PIXOPET 身边的人',voicesTitle:'为什么我们总想回来看看。',coCreator:'共同创作者',earlyPreview:'早期体验者',sampleFeedback:'示例反馈',quoteBarney:'大多数健康应用只会告诉你应该做什么。我们想做一个让你真正愿意关心的伙伴。',quoteZeqian:'我希望健康数据不再只是数字，而是你和伙伴一起建立的小世界。',quoteWalk:'它让一次短短的散步，也感觉真的去了某个地方。',quoteCare:'我只是打开看看宠物，最后却也开始更认真地照顾自己。',quoteData:'健康数据慢慢消失在背景里，我真正注意到的是伙伴正在长大。',quoteDetails:'像素细节让每一次小小解锁，都变得意外地特别。',previewNote:'这些体验反馈目前是草稿占位内容，正式上线前应替换为通过确认的用户评价。',downloadTitle:'照顾好自己。<br>养大你喜欢的伙伴。',downloadText:'PixoPet 正在准备与你见面。',toast:'PixoPet iPhone 版即将推出。'
+    title:'PixoPet — 你的生活，它的冒险',description:'PixoPet 把睡眠、专注和运动变成宠物成长能量。',navHow:'它如何成长',navSignals:'日常能量',navVoices:'用户声音',download:'加入等待名单',downloadIphone:'加入 iPhone 等待名单',heroEyebrow:'由你的生活驱动的伙伴',heroTitle:'你的生活。<br>它的冒险。',heroText:'睡眠、专注、运动。每天的习惯都会成为能量，<br>陪伴你的数字宠物一起成长。',watchFilm:'观看 28 秒短片',comingSoon:'iPhone 版即将推出',howTitle:'照顾自己，<br>也是在<br>照顾它。',howText:'不需要改变全部生活。从今天能做到的一点点开始。',hatchTitle:'孵化你的伙伴',hatchText:'从一张喜欢的照片开始，创造一只属于你的 PixoPet。',energyTitle:'把日常变成能量',energyText:'睡眠、专注和运动，会成为可以分配给宠物的成长经验。',storyTitle:'解锁新的故事',storyText:'一起升级、探索旅程，并留下每一次共同成长。',hatchCaption:'一张照片，一个新朋友',energyCaption:'今天积累了 512 EXP',storyCaption:'新的旅程已经解锁',signalTitle:'你度过的一天，<br>是它成长的能量。',signalIntro:'三种日常信号，一个不断成长的伙伴。',sleepKicker:'恢复',sleepTitle:'睡眠',sleepText:'一个好觉，会成为它醒来时收到的成长能量。',sleepTag:'休息 + 充能',focusKicker:'创造',focusTitle:'专注',focusText:'每一分钟专注，都让它更靠近下一个等级。',focusTag:'时间 + 成长',moveKicker:'探索',moveTitle:'运动',moveText:'每一次步行，都让它发现更多新的世界。',moveTag:'步数 + 冒险',journalTitle:'走过的每一站，<br>都成为只属于<br>你们的收藏。',journalText:'冒险海报、成长瞬间和日常碎片，会慢慢长成一本共同回忆。',cloudPost:'云上邮局',cloudCopy:'我们把今天的好心情，寄给了未来。',moonCamp:'月光露营地',forestNap:'森林午睡',memoryQuote:'今天走了很远，但 Pixo 一直在身边。',voicesKicker:'认识 PIXOPET 身边的人',voicesTitle:'为什么我们总想回来看看。',coCreator:'共同创作者',earlyPreview:'早期体验者',sampleFeedback:'示例反馈',quoteBarney:'大多数健康应用只会告诉你应该做什么。我们想做一个让你真正愿意关心的伙伴。',quoteZeqian:'我希望健康数据不再只是数字，而是你和伙伴一起建立的小世界。',quoteWalk:'它让一次短短的散步，也感觉真的去了某个地方。',quoteCare:'我只是打开看看宠物，最后却也开始更认真地照顾自己。',quoteData:'健康数据慢慢消失在背景里，我真正注意到的是伙伴正在长大。',quoteDetails:'像素细节让每一次小小解锁，都变得意外地特别。',previewNote:'这些体验反馈目前是草稿占位内容，正式上线前应替换为通过确认的用户评价。',downloadTitle:'抢先认识 PixoPet。',downloadText:'加入 iPhone 等待名单，PixoPet 准备好与你见面时，我们会第一时间通知你。',emailLabel:'电子邮箱',emailPlaceholder:'你的电子邮箱',waitlistSubmit:'加入等待名单',waitlistNote:'当前为预览版——邮件服务接入前，邮箱只会保存在此设备上。',waitlistSaved:'已保存在此设备上，邮件通知服务尚未接入。'
   }
 };
 
@@ -16,6 +16,7 @@ translations.zh.signalIntro='不需要额外打卡。PixoPet 会轻轻收集你�
 
 const languageButtons=document.querySelectorAll('[data-language]');
 const translatable=document.querySelectorAll('[data-i18n]');
+const placeholderTranslatable=document.querySelectorAll('[data-i18n-placeholder]');
 const howTabs=document.querySelectorAll('[data-how]');
 const howPanels=document.querySelectorAll('[data-how-panel]');
 const signalChapters=document.querySelectorAll('[data-signal]');
@@ -28,6 +29,8 @@ const filmModal=document.querySelector('.film-modal');
 const filmVideo=filmModal.querySelector('video');
 const toast=document.querySelector('#toast');
 const cursorAura=document.querySelector('.cursor-aura');
+const waitlistForm=document.querySelector('[data-waitlist-form]');
+const waitlistEmail=document.querySelector('[data-waitlist-email]');
 let currentLanguage=localStorage.getItem('pixopet-language')||'en';
 let toastTimer;
 
@@ -38,11 +41,13 @@ function applyLanguage(language){
   document.title=copy.title;
   document.querySelector('meta[name="description"]').setAttribute('content',copy.description);
   translatable.forEach(element=>{const value=copy[element.dataset.i18n];if(typeof value==='string')element.innerHTML=value});
+  placeholderTranslatable.forEach(element=>{const value=copy[element.dataset.i18nPlaceholder];if(typeof value==='string')element.setAttribute('placeholder',value)});
   languageButtons.forEach(button=>{const active=button.dataset.language===language;button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active))});
   localStorage.setItem('pixopet-language',language);
 }
 
-function showDownloadMessage(){toast.textContent=translations[currentLanguage].toast;toast.classList.add('is-visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('is-visible'),2600)}
+function showToast(message){toast.textContent=message;toast.classList.add('is-visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('is-visible'),3200)}
+function openWaitlist(){document.querySelector('#download')?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});setTimeout(()=>waitlistEmail?.focus({preventScroll:true}),650)}
 function setHowStep(step){howTabs.forEach(tab=>{const active=tab.dataset.how===step;tab.classList.toggle('is-active',active);tab.setAttribute('aria-selected',String(active))});howPanels.forEach(panel=>panel.classList.toggle('is-active',panel.dataset.howPanel===step))}
 
 const signalData={
@@ -73,9 +78,80 @@ function initCursorAura(){
   addEventListener('blur',()=>cursorAura.classList.remove('is-active'));
 }
 
+function initPointerPetsPilot(){
+  const stage=document.querySelector('[data-pointer-pets]');
+  const atlas=document.querySelector('[data-pointer-pets-atlas]');
+  const hero=document.querySelector('.hero');
+  if(!stage||!atlas||!hero||!matchMedia('(pointer: fine)').matches||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  const frames={center:[0,0],up:[1,0],upRight:[2,0],right:[0,1],downRight:[1,1],down:[2,1],downLeft:[0,2],left:[1,2],upLeft:[2,2]};
+  const atlasImage=new Image();atlasImage.src='assets/pointer-pets-9way.webp';atlasImage.decode?.().catch(()=>{});
+  let targetX=0,targetY=0,currentX=0,currentY=0,currentState='center',pendingState='center',pendingFrames=0,animationFrame=0;
+  const directionFor=(x,y)=>{
+    if(Math.hypot(x,y)<.2)return'center';
+    const angle=Math.atan2(y,x)*180/Math.PI;
+    if(angle>=-22.5&&angle<22.5)return'right';
+    if(angle>=22.5&&angle<67.5)return'downRight';
+    if(angle>=67.5&&angle<112.5)return'down';
+    if(angle>=112.5&&angle<157.5)return'downLeft';
+    if(angle>=157.5||angle<-157.5)return'left';
+    if(angle>=-157.5&&angle<-112.5)return'upLeft';
+    if(angle>=-112.5&&angle<-67.5)return'up';
+    return'upRight';
+  };
+  const showState=state=>{
+    if(state===currentState)return;
+    const [column,row]=frames[state];
+    atlas.style.backgroundPosition=`${column*50}% ${row*50}%`;
+    currentState=state;
+    stage.dataset.pointerState=state;
+  };
+  const render=()=>{
+    currentX+=(targetX-currentX)*.18;
+    currentY+=(targetY-currentY)*.18;
+    const candidate=directionFor(currentX,currentY);
+    if(candidate===pendingState)pendingFrames+=1;else{pendingState=candidate;pendingFrames=1}
+    if(pendingFrames>=2)showState(candidate);
+    if(Math.abs(targetX-currentX)>.008||Math.abs(targetY-currentY)>.008)animationFrame=requestAnimationFrame(render);else animationFrame=0;
+  };
+  const requestRender=()=>{if(!animationFrame)animationFrame=requestAnimationFrame(render)};
+  const move=event=>{
+    const rect=hero.getBoundingClientRect();
+    targetX=Math.max(-1,Math.min(1,(event.clientX-rect.left)/rect.width*2-1));
+    const visibleHeight=Math.min(rect.height,innerHeight);
+    targetY=Math.max(-1,Math.min(1,(event.clientY-rect.top)/visibleHeight*2-1));
+    requestRender();
+  };
+  hero.addEventListener('pointermove',move,{passive:true});
+  hero.addEventListener('pointerdown',move,{passive:true});
+  hero.addEventListener('pointerleave',()=>{targetX=0;targetY=0;requestRender()});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden){targetX=0;targetY=0;requestRender()}});
+}
+
+function initCenteredSectionSnap(){
+  const enabled=matchMedia('(min-width:761px) and (pointer:fine) and (prefers-reduced-motion:no-preference)');
+  const selector='.hero,.how-overview,.signal-intro,.signal-chapter,.journal-section,.voices-section,.download-section';
+  let settleTimer=0,isSettling=false;
+  const settle=()=>{
+    if(!enabled.matches||isSettling)return;
+    const header=Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header'))||0;
+    const viewportCenter=(header+innerHeight)/2;
+    const targets=[...document.querySelectorAll(selector)].map(element=>({element,rect:element.getBoundingClientRect()})).filter(({rect})=>rect.bottom>header&&rect.top<innerHeight);
+    if(!targets.length)return;
+    const nearest=targets.reduce((best,item)=>Math.abs(item.rect.top+item.rect.height/2-viewportCenter)<Math.abs(best.rect.top+best.rect.height/2-viewportCenter)?item:best);
+    const delta=nearest.rect.top+nearest.rect.height/2-viewportCenter;
+    if(Math.abs(delta)<8||Math.abs(delta)>innerHeight*.56)return;
+    isSettling=true;
+    document.documentElement.classList.add('is-js-snapping');
+    scrollTo({top:scrollY+delta,behavior:'smooth'});
+    setTimeout(()=>{document.documentElement.classList.remove('is-js-snapping');isSettling=false},620);
+  };
+  addEventListener('scroll',()=>{clearTimeout(settleTimer);settleTimer=setTimeout(settle,150)},{passive:true});
+}
+
 languageButtons.forEach(button=>button.addEventListener('click',()=>applyLanguage(button.dataset.language)));
 howTabs.forEach(tab=>tab.addEventListener('click',()=>setHowStep(tab.dataset.how)));
-document.querySelectorAll('[data-download]').forEach(button=>button.addEventListener('click',showDownloadMessage));
+document.querySelectorAll('[data-waitlist]').forEach(button=>button.addEventListener('click',openWaitlist));
+waitlistForm?.addEventListener('submit',event=>{event.preventDefault();if(!waitlistForm.reportValidity())return;sessionStorage.setItem('pixopet-waitlist-preview',waitlistEmail.value.trim());waitlistForm.classList.add('is-saved');showToast(translations[currentLanguage].waitlistSaved)});
 document.querySelectorAll('[data-open-film]').forEach(button=>button.addEventListener('click',()=>{filmModal.classList.add('is-open');filmModal.setAttribute('aria-hidden','false');filmVideo.play().catch(()=>{})}));
 document.querySelector('.film-close').addEventListener('click',closeFilm);
 filmModal.addEventListener('click',event=>{if(event.target===filmModal)closeFilm()});
@@ -83,4 +159,4 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape')closeFilm()}
 function closeFilm(){filmModal.classList.remove('is-open');filmModal.setAttribute('aria-hidden','true');filmVideo.pause()}
 videoToggle.addEventListener('click',()=>{if(heroVideo.paused){heroVideo.play();videoToggle.textContent='Ⅱ';videoToggle.setAttribute('aria-label','Pause background video')}else{heroVideo.pause();videoToggle.textContent='▶';videoToggle.setAttribute('aria-label','Play background video')}});
 addEventListener('scroll',updateParallax,{passive:true});
-applyLanguage(currentLanguage);setHowStep('story');setSignal('sleep');updateParallax();initCursorAura();
+applyLanguage(currentLanguage);setHowStep('story');setSignal('sleep');updateParallax();initCursorAura();initPointerPetsPilot();initCenteredSectionSnap();

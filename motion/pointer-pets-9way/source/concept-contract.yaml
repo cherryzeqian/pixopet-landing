@@ -1,0 +1,21 @@
+subject_count: 2
+subjects:
+  - identity: "Black-and-white fluffy dog with a blue scarf, standing on the left"
+  - identity: "Grey long-haired cat with green eyes and an orange knit beanie, sitting on the right"
+style: "Match the existing polished PixoPet illustrated character assets exactly"
+motion_intent: "Both characters track the pointer with their eyes first and a restrained secondary head movement in nine directions"
+background_owner: page
+scene: "Transparent cutout over the existing landing-page background"
+driver: pointer
+input_semantics: continuous
+time_control: scrub
+navigation: none
+clip_continuity: independent
+continuity:
+  - "Keep dog and cat identity, body proportions, relative placement, clothing, colors, paws, tails and expressions consistent"
+  - "Body pose, paws, tails, clothing, character scale and relative placement must remain stable"
+  - "Pupils and gaze move clearly toward the pointer; each head may turn or tilt only a few degrees as a secondary follow"
+  - "Head movement must be much smaller than the earlier full-direction poses"
+  - "Keep the same 16:9 transparent canvas and bottom alignment"
+aspect_ratio: "16:9"
+destination: "PixoPet landing-page hero, 340x191 CSS px maximum on desktop, desktop pointer input; static center fallback on mobile and reduced motion"

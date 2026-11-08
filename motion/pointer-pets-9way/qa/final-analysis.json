@@ -1,0 +1,239 @@
+{
+  "source": "/Users/cherryli/.codex/.chatgpt-projects/g-p-6aa6c1b912d481918bd0f14e655a25d6/sites/pixopet-landing/motion/pointer-pets-9way/frames/final",
+  "frameCount": 9,
+  "canvas": [
+    1672,
+    941
+  ],
+  "summary": {
+    "medianSubjectHeightRatio": 0.9702444208289054,
+    "subjectHeightRange": [
+      0.9479277364505845,
+      0.9744952178533475
+    ],
+    "centerXRange": [
+      0.47875523638539796,
+      0.4814482345900658
+    ],
+    "centerYRange": [
+      0.4989373007438895,
+      0.5132837407013815
+    ],
+    "medianFrameDifference": 0.05268253279320988,
+    "warningCount": 8
+  },
+  "warnings": [
+    {
+      "frame": 1,
+      "type": "canvas-size",
+      "message": "frame_00001.png has size (1671, 941), expected (1672, 941)"
+    },
+    {
+      "frame": 2,
+      "type": "canvas-size",
+      "message": "frame_00002.png has size (1671, 941), expected (1672, 941)"
+    },
+    {
+      "frame": 3,
+      "type": "canvas-size",
+      "message": "frame_00003.png has size (1671, 941), expected (1672, 941)"
+    },
+    {
+      "frame": 4,
+      "type": "canvas-size",
+      "message": "frame_00004.png has size (1671, 941), expected (1672, 941)"
+    },
+    {
+      "frame": 5,
+      "type": "canvas-size",
+      "message": "frame_00005.png has size (1671, 941), expected (1672, 941)"
+    },
+    {
+      "frame": 6,
+      "type": "canvas-size",
+      "message": "frame_00006.png has size (1671, 941), expected (1672, 941)"
+    },
+    {
+      "frame": 7,
+      "type": "canvas-size",
+      "message": "frame_00007.png has size (1671, 941), expected (1672, 941)"
+    },
+    {
+      "frame": 8,
+      "type": "canvas-size",
+      "message": "frame_00008.png has size (1671, 941), expected (1672, 941)"
+    }
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "frame_00000.png",
+      "width": 1672,
+      "height": 941,
+      "bbox": [
+        103,
+        16,
+        1502,
+        929
+      ],
+      "luminance": 0.5741961315212005,
+      "subjectWidthRatio": 0.8367224880382775,
+      "subjectHeightRatio": 0.9702444208289054,
+      "centerX": 0.47996411483253587,
+      "centerY": 0.502125398512221,
+      "occupancy": 0.8118253258012194
+    },
+    {
+      "index": 1,
+      "file": "frame_00001.png",
+      "width": 1671,
+      "height": 941,
+      "bbox": [
+        104,
+        14,
+        1502,
+        928
+      ],
+      "luminance": 0.5840680179424464,
+      "subjectWidthRatio": 0.8366247755834829,
+      "subjectHeightRatio": 0.971307120085016,
+      "centerX": 0.4805505685218432,
+      "centerY": 0.5005313496280552,
+      "occupancy": 0.8126196013637655,
+      "differenceFromPrevious": 0.034547192719680465
+    },
+    {
+      "index": 2,
+      "file": "frame_00002.png",
+      "width": 1671,
+      "height": 941,
+      "bbox": [
+        102,
+        12,
+        1507,
+        928
+      ],
+      "luminance": 0.5698301956136307,
+      "subjectWidthRatio": 0.8408138839018552,
+      "subjectHeightRatio": 0.973432518597237,
+      "centerX": 0.4814482345900658,
+      "centerY": 0.49946865037194477,
+      "occupancy": 0.8184755766781077,
+      "differenceFromPrevious": 0.06259531590413944
+    },
+    {
+      "index": 3,
+      "file": "frame_00003.png",
+      "width": 1671,
+      "height": 941,
+      "bbox": [
+        103,
+        19,
+        1502,
+        928
+      ],
+      "luminance": 0.5746200509332812,
+      "subjectWidthRatio": 0.8372232196289647,
+      "subjectHeightRatio": 0.9659936238044633,
+      "centerX": 0.48025134649910234,
+      "centerY": 0.5031880977683315,
+      "occupancy": 0.8087522918626237,
+      "differenceFromPrevious": 0.03702427151416121
+    },
+    {
+      "index": 4,
+      "file": "frame_00004.png",
+      "width": 1671,
+      "height": 941,
+      "bbox": [
+        102,
+        16,
+        1503,
+        929
+      ],
+      "luminance": 0.5592581001897943,
+      "subjectWidthRatio": 0.8384201077199281,
+      "subjectHeightRatio": 0.9702444208289054,
+      "centerX": 0.48025134649910234,
+      "centerY": 0.502125398512221,
+      "occupancy": 0.8134724318260302,
+      "differenceFromPrevious": 0.06444589120370371
+    },
+    {
+      "index": 5,
+      "file": "frame_00005.png",
+      "width": 1671,
+      "height": 941,
+      "bbox": [
+        103,
+        28,
+        1501,
+        929
+      ],
+      "luminance": 0.5549590691919359,
+      "subjectWidthRatio": 0.8366247755834829,
+      "subjectHeightRatio": 0.9574920297555791,
+      "centerX": 0.4799521244763615,
+      "centerY": 0.5085015940488842,
+      "occupancy": 0.801061554517235,
+      "differenceFromPrevious": 0.04276974968228032
+    },
+    {
+      "index": 6,
+      "file": "frame_00006.png",
+      "width": 1671,
+      "height": 941,
+      "bbox": [
+        98,
+        37,
+        1502,
+        929
+      ],
+      "luminance": 0.5663230746467263,
+      "subjectWidthRatio": 0.8402154398563735,
+      "subjectHeightRatio": 0.9479277364505845,
+      "centerX": 0.47875523638539796,
+      "centerY": 0.5132837407013815,
+      "occupancy": 0.7964635200338843,
+      "differenceFromPrevious": 0.06828944830246914
+    },
+    {
+      "index": 7,
+      "file": "frame_00007.png",
+      "width": 1671,
+      "height": 941,
+      "bbox": [
+        102,
+        13,
+        1501,
+        928
+      ],
+      "luminance": 0.5708019750546363,
+      "subjectWidthRatio": 0.8372232196289647,
+      "subjectHeightRatio": 0.9723698193411264,
+      "centerX": 0.4796529024536206,
+      "centerY": 0.5,
+      "occupancy": 0.8140905908188126,
+      "differenceFromPrevious": 0.07225271763798112
+    },
+    {
+      "index": 8,
+      "file": "frame_00008.png",
+      "width": 1671,
+      "height": 941,
+      "bbox": [
+        99,
+        11,
+        1504,
+        928
+      ],
+      "luminance": 0.5699808198577933,
+      "subjectWidthRatio": 0.8408138839018552,
+      "subjectHeightRatio": 0.9744952178533475,
+      "centerX": 0.4796529024536206,
+      "centerY": 0.4989373007438895,
+      "occupancy": 0.8193691089670576,
+      "differenceFromPrevious": 0.04219047862200435
+    }
+  ]
+}

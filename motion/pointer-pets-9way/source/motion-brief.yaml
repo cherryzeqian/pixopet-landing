@@ -1,0 +1,31 @@
+concept_contract: source/concept-contract.yaml
+identity_bible: source/identity-bible.md
+parameter_space: 2d
+media_access: random
+gesture_policy:
+  unit: continuous
+  inertia: coalesce
+  while_active: retarget
+  boundary: clamp
+  programmatic_navigation: ignore
+storyboard:
+  - center
+  - up
+  - up-right
+  - right
+  - down-right
+  - down
+  - down-left
+  - left
+  - up-left
+keyframes: "Existing center/up/right/down/left plus generated up-right/down-right/down-left/up-left"
+clip_chain: "Independent direction states selected by pointer position"
+rest_state: center
+loop: none
+anchor: fixed-body
+scene_continuity: null
+frame_policy: native
+target_fps: 60
+quality_target: "Transparent RGBA assets, source at least 1672x941; runtime displayed at up to 340x191 CSS px and DPR 2"
+pixel_dimensions: "1672x941"
+reduced_motion: center
