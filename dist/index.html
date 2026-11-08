@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#f5ffff">
   <title>PixoPet — Your life. Their adventure.</title>
   <link rel="icon" href="assets/AppIcon-1024.png">
-  <link rel="stylesheet" href="styles.css?v=31">
+  <link rel="stylesheet" href="styles.css?v=36">
 </head>
 <body>
   <div class="cursor-aura" aria-hidden="true"></div>
@@ -51,11 +51,11 @@
     <section id="signals" class="signal-story">
       <div class="signal-intro"><p class="eyebrow" data-i18n="signalKicker">02 — DAILY ENERGY</p><h2 data-i18n="signalTitle">The day you live<br>becomes their<br>energy.</h2><p data-i18n="signalIntro">No extra check-in. PixoPet gently gathers the good habits already inside your day.</p></div>
       <div class="signal-layout">
-        <div class="signal-visual-wrap"><div class="signal-visual" data-signal-visual="sleep"><div class="signal-ring"><span class="signal-tick tick-a"></span><span class="signal-tick tick-b"></span><span class="signal-tick tick-c"></span></div><img data-signal-icon src="assets/sleep@3x.png" alt=""><small data-signal-label>REST + ENERGY</small></div></div>
+        <div class="signal-visual-wrap"><div class="signal-visual" data-signal-visual="sleep"><div class="signal-ring"><span class="signal-tick tick-a"></span><span class="signal-tick tick-b"></span><span class="signal-tick tick-c"></span></div><img data-signal-icon src="assets/sleep@3x.png" alt=""><small data-signal-label>REST + ENERGY</small><span class="signal-level" data-signal-level>68%</span></div></div>
         <div class="signal-chapters">
-          <article class="signal-chapter is-active" data-signal="sleep"><span>01</span><small data-i18n="sleepKicker">RECOVER</small><h3 data-i18n="sleepTitle">Sleep</h3><p data-i18n="sleepText">A good night becomes energy your pet can wake up with.</p><b data-i18n="sleepTag">REST + RECHARGE</b></article>
-          <article class="signal-chapter" data-signal="focus"><span>02</span><small data-i18n="focusKicker">CREATE</small><h3 data-i18n="focusTitle">Focus</h3><p data-i18n="focusText">Focused minutes move your companion closer to the next level.</p><b data-i18n="focusTag">TIME + GROWTH</b></article>
-          <article class="signal-chapter" data-signal="move"><span>03</span><small data-i18n="moveKicker">EXPLORE</small><h3 data-i18n="moveTitle">Move</h3><p data-i18n="moveText">Every walk gives your pet more of the world to discover.</p><b data-i18n="moveTag">STEPS + ADVENTURE</b></article>
+          <article id="sleep" class="signal-chapter is-active" data-signal="sleep"><span>01</span><small data-i18n="sleepKicker">RECOVER</small><h3 data-i18n="sleepTitle">Sleep</h3><div class="chapter-progress" aria-label="68 percent"><span></span><strong>68%</strong></div><p data-i18n="sleepText">A good night becomes energy your pet can wake up with.</p><b data-i18n="sleepTag">REST + RECHARGE</b></article>
+          <article id="focus" class="signal-chapter" data-signal="focus"><span>02</span><small data-i18n="focusKicker">CREATE</small><h3 data-i18n="focusTitle">Focus</h3><div class="chapter-progress" aria-label="43 percent"><span></span><strong>43%</strong></div><p data-i18n="focusText">Focused minutes move your companion closer to the next level.</p><b data-i18n="focusTag">TIME + GROWTH</b></article>
+          <article id="move" class="signal-chapter" data-signal="move"><span>03</span><small data-i18n="moveKicker">EXPLORE</small><h3 data-i18n="moveTitle">Move</h3><div class="chapter-progress" aria-label="88 percent"><span></span><strong>88%</strong></div><p data-i18n="moveText">Every walk gives your pet more of the world to discover.</p><b data-i18n="moveTag">STEPS + ADVENTURE</b></article>
         </div>
       </div>
     </section>
@@ -90,6 +90,6 @@
   <footer><a class="brand brand-light" href="#top"><img src="assets/brand-icon.png" alt="" width="36" height="36"><span>PixoPet</span></a><p>© 2026 PixoPet</p></footer>
   <div class="film-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="PixoPet launch film"><button class="film-close" type="button" aria-label="Close film">×</button><video controls playsinline poster="assets/pixopet-launch-poster.png"><source src="assets/pixopet-launch-en.mp4" type="video/mp4"></video></div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="script.js?v=29"></script>
+  <script src="script.js?v=32"></script>
 </body>
 </html>

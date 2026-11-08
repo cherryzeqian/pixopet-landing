@@ -23,6 +23,7 @@ const signalChapters=document.querySelectorAll('[data-signal]');
 const signalVisual=document.querySelector('[data-signal-visual]');
 const signalIcon=document.querySelector('[data-signal-icon]');
 const signalLabel=document.querySelector('[data-signal-label]');
+const signalLevel=document.querySelector('[data-signal-level]');
 const heroVideo=document.querySelector('.hero-media video');
 const videoToggle=document.querySelector('.video-toggle');
 const filmModal=document.querySelector('.film-modal');
@@ -51,11 +52,11 @@ function openWaitlist(){document.querySelector('#download')?.scrollIntoView({beh
 function setHowStep(step){howTabs.forEach(tab=>{const active=tab.dataset.how===step;tab.classList.toggle('is-active',active);tab.setAttribute('aria-selected',String(active))});howPanels.forEach(panel=>panel.classList.toggle('is-active',panel.dataset.howPanel===step))}
 
 const signalData={
-  sleep:{color:'#6e3bf0',icon:'assets/sleep@3x.png',label:'REST + ENERGY'},
-  focus:{color:'#00a1a1',icon:'assets/focus@3x.png',label:'TIME + GROWTH'},
-  move:{color:'#ed4740',icon:'assets/move@3x.png',label:'STEPS + ADVENTURE'}
+  sleep:{color:'#6e3bf0',icon:'assets/sleep@3x.png',label:'REST + ENERGY',progress:68},
+  focus:{color:'#00a1a1',icon:'assets/focus@3x.png',label:'TIME + GROWTH',progress:43},
+  move:{color:'#ed4740',icon:'assets/move@3x.png',label:'STEPS + ADVENTURE',progress:88}
 };
-function setSignal(type){const data=signalData[type];if(!data)return;signalChapters.forEach(chapter=>chapter.classList.toggle('is-active',chapter.dataset.signal===type));signalVisual.dataset.signalVisual=type;signalVisual.style.setProperty('--signal-color',data.color);signalIcon.src=data.icon;signalLabel.textContent=data.label;signalIcon.animate([{transform:'scale(.82) rotate(-8deg)',opacity:.4},{transform:'scale(1) rotate(0)',opacity:1}],{duration:500,easing:'cubic-bezier(.22,.78,.2,1)'})}
+function setSignal(type){const data=signalData[type];if(!data)return;signalChapters.forEach(chapter=>chapter.classList.toggle('is-active',chapter.dataset.signal===type));signalVisual.dataset.signalVisual=type;signalVisual.style.setProperty('--signal-color',data.color);signalVisual.style.setProperty('--signal-progress',`${data.progress}%`);signalIcon.src=data.icon;signalLabel.textContent=data.label;signalLevel.textContent=`${data.progress}%`;signalIcon.animate([{transform:'scale(.82) rotate(-8deg)',opacity:.4},{transform:'scale(1) rotate(0)',opacity:1}],{duration:500,easing:'cubic-bezier(.22,.78,.2,1)'})}
 
 const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-in-view');revealObserver.unobserve(entry.target)}}),{threshold:.12});
 document.querySelectorAll('[data-reveal]').forEach(element=>revealObserver.observe(element));
