@@ -104,10 +104,10 @@ html,body{overflow-x:hidden}
 @media(max-width:760px){html{scroll-snap-type:none}.waitlist-form{grid-template-columns:1fr}.waitlist-submit{width:100%}}
 
 /* Oil Motion: nine-direction gaze with coordinated eye and head turns. */
-.pointer-pets-pilot{position:absolute;z-index:3;top:400px;left:clamp(32px,7vw,112px);width:clamp(250px,24vw,340px);aspect-ratio:16/9;pointer-events:none;contain:layout paint}
+.pointer-pets-pilot{position:absolute;z-index:3;top:400px;left:clamp(24px,4vw,64px);width:clamp(300px,28vw,400px);aspect-ratio:16/9;pointer-events:none;contain:layout paint}
 .pointer-pets-atlas{position:absolute;inset:0;background-image:url('assets/pointer-pets-9way.webp');background-repeat:no-repeat;background-position:0 0;background-size:300% 300%;will-change:background-position}
-@media(max-width:1050px){.pointer-pets-pilot{top:410px;left:20px;width:clamp(240px,30vw,300px)}}
-@media(max-width:760px){.pointer-pets-pilot{top:430px;left:12px;width:200px}}
+@media(max-width:1050px){.pointer-pets-pilot{top:430px;left:16px;width:clamp(250px,29vw,290px)}}
+@media(max-width:760px){.hero{padding-bottom:210px}.pointer-pets-pilot{top:auto;right:auto;bottom:26px;left:50%;width:230px;transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.pointer-pets-atlas{will-change:auto}}
 
 /* Section-level composition and centered scroll snap. */
@@ -120,7 +120,8 @@ html,body{overflow-x:hidden}
   .hero-lead{margin-top:clamp(18px,2.8vh,28px);font-size:clamp(16px,1.35vw,20px)}
   .hero-actions{margin-top:clamp(22px,3.4vh,32px)}
   .film-section .hero-media{width:min(1240px,calc(100% - 48px),calc((100svh - var(--header) - 72px)*1.7778));flex:0 0 auto}
-  .pointer-pets-pilot{top:clamp(350px,48svh,430px);width:clamp(230px,22vw,320px)}
+  .pointer-pets-pilot{top:clamp(430px,52svh,490px);left:clamp(24px,4vw,58px);width:clamp(310px,28vw,400px)}
+  html[lang="en"] .pointer-pets-pilot{top:clamp(450px,55svh,510px)}
 
   .how-overview{padding:0 24px;display:grid;place-items:center}
   .how-layout{width:min(1180px,100%);min-height:0;padding:clamp(42px,6vh,70px) clamp(24px,4vw,56px);grid-template-columns:.95fr .92fr 1.05fr;gap:clamp(28px,3.5vw,52px)}
@@ -169,6 +170,7 @@ html,body{overflow-x:hidden}
   .film-section .hero-media{width:min(960px,calc(100% - 32px),calc((100svh - var(--header) - 64px)*1.7778))}
   .how-layout{grid-template-columns:.9fr 1fr 1fr;padding-inline:20px;gap:24px}
   .section-copy{grid-column:auto}
+  .pointer-pets-pilot,html[lang="en"] .pointer-pets-pilot{top:54svh;left:16px;width:clamp(250px,28vw,290px)}
   .journal-section{grid-template-columns:minmax(280px,.82fr) minmax(430px,1.18fr);gap:28px;padding-inline:30px}
   .journal-heading h2{font-size:clamp(42px,5.3vw,58px)}
 }
@@ -185,7 +187,7 @@ html,body{overflow-x:hidden}
   .hero-copy{padding-top:34px;padding-bottom:24px}
   .film-section{padding-block:28px}
   .film-section .hero-media{width:min(1060px,calc(100% - 48px),calc((100svh - var(--header) - 56px)*1.7778))}
-  .pointer-pets-pilot{top:43svh;width:250px}
+  .pointer-pets-pilot,html[lang="en"] .pointer-pets-pilot{top:48svh;width:clamp(270px,26vw,330px)}
   .how-layout{padding-block:28px}
   .how-visual{height:390px}
   .journal-section{padding-block:20px}
