@@ -26,10 +26,12 @@ Object.assign(translations.en,{
   faqQ1:'What exactly is PixoPet?',faqA1:'PixoPet turns everyday activity such as sleep, focus, and movement into energy for a digital companion that grows with you.',
   faqQ2:'Do I need to log everything myself?',faqA2:'No. PixoPet is designed to work with activity you already track on your iPhone, after you choose to grant access. There is no extra daily check in to maintain.',
   faqQ3:'What health data does PixoPet use?',faqA3:'The experience is built around sleep, focus, and movement data. You choose which supported categories to share, and you can manage those permissions from your iPhone.',
-  faqQ4:'How will my data be handled?',faqA4:'PixoPet will only access supported data after you grant permission. Full storage, processing, and privacy details will be published before the app is released.',
-  faqQ5:'Which devices will PixoPet support?',faqA5:'We are preparing the iPhone version first. Support for other platforms has not been announced yet.',
-  faqQ6:'Is PixoPet available now?',faqA6:'Not yet. Join the iPhone waitlist and we will let you know when the first version is ready to try.',
-  faqQ7:'Is PixoPet a medical or diagnostic app?',faqA7:'No. PixoPet is a companion experience for reflecting on everyday activity. It is not intended to diagnose, treat, or replace professional medical advice.'
+  faqQ4:'How will my data be handled?',faqA4:'PixoPet only accesses supported data after you grant permission. You can review and manage those permissions from your iPhone.',
+  faqQ5:'Which devices does PixoPet support?',faqA5:'PixoPet is available for iPhone. Support for other platforms has not been announced yet.',
+  faqQ6:'Is PixoPet available now?',faqA6:'Yes. PixoPet is available for iPhone now.',
+  faqQ7:'Is PixoPet a medical or diagnostic app?',faqA7:'No. PixoPet is a companion experience for reflecting on everyday activity. It is not intended to diagnose, treat, or replace professional medical advice.',
+  download:'Download',downloadIphone:'Download PixoPet for iPhone',
+  downloadTitle:'Download PixoPet',downloadText:'PixoPet is available now on iPhone.'
 });
 translations.zh.signalKicker='02 日常能量';
 translations.zh.signalTitle='你度过的一天，<br>成为它成长的<br>能量';
@@ -41,7 +43,7 @@ Object.assign(translations.zh,{
   title:'PixoPet｜享受生活，享受成长',
   description:'好好睡觉、认真专注、出门走走。生活中的每一点努力，都会成为陪伴小宠物成长的能量。',
   navHow:'了解 PixoPet',navSignals:'每日能量',navJournal:'共同回忆',navVoices:'用户心声',
-  download:'加入候补名单',downloadIphone:'加入候补名单',
+  download:'下载',downloadIphone:'下载 iPhone 版 PixoPet',
   heroTitle:'享受生活<br>享受成长',
   heroText:'好好睡觉、认真专注、出门走走。生活中的每一点努力，都会成为陪伴小宠物成长的能量。',
   howKicker:'01 了解 PIXOPET',howTitle:'你的日常，<br>就是成长的起点',
@@ -72,21 +74,17 @@ Object.assign(translations.zh,{
   quoteChloe:'它有一种很奇妙的激励感，却不会一直提醒我必须保持积极。我觉得这可能就是我一直愿意打开它的原因。',
   quoteAlex:'以前步数对我来说只是一个会被忽略的数字。现在我反而开始好奇，它接下来会变成什么。',
   previewNote:'以上用户评价为页面设计示例，正式发布前需替换为经过确认并获得授权的真实用户反馈。创作者文案也应由本人确认。',
-  downloadTitle:'下一段旅程，<br>一起出发',downloadText:'小伙伴已经准备好啦！留下邮箱，PixoPet 开放体验时，我们会第一时间告诉你。',
-  emailLabel:'电子邮箱',emailPlaceholder:'输入你的邮箱地址',waitlistSubmit:'期待相遇',waitlistSaved:'收到啦，期待和你见面！',
-  waitlistOpen:'留下邮箱，PixoPet 开放体验时第一时间告诉你。',waitlistInvalid:'请输入有效的邮箱地址',
-  waitlistLocalSaved:'邮箱已保存在当前设备上',
-  waitlistNote:'当前为本地预览版本。在邮件订阅服务正式连接之前，邮箱信息仅保存在当前设备上。',
-  musicError:'音乐暂时无法播放',videoError:'视频加载失败，请稍后再试',footerTagline:'享受生活，享受成长'
+  downloadTitle:'下载 PixoPet',downloadText:'PixoPet iPhone 版现已上线。',
+  videoError:'视频加载失败，请稍后再试',footerTagline:'享受生活，享受成长'
 });
 Object.assign(translations.zh,{
   faqKicker:'05 常见问题',faqTitle:'你可能还想知道这些',faqIntro:'下载之前，先把重要的问题说清楚。',
   faqQ1:'PixoPet 到底是什么？',faqA1:'PixoPet 会把睡眠、专注和运动等日常活动变成成长能量，陪伴一个属于你的数字小伙伴慢慢长大。',
   faqQ2:'我需要每天手动记录吗？',faqA2:'不需要。经你授权后，PixoPet 会结合 iPhone 中已经记录的活动数据，不要求你另外打卡或维护一套新的记录习惯。',
   faqQ3:'PixoPet 会使用哪些健康数据？',faqA3:'目前的体验围绕睡眠、专注和运动数据设计。你可以自行选择授权支持的数据类别，也可以在 iPhone 中管理这些权限。',
-  faqQ4:'我的数据会怎样被处理？',faqA4:'只有在你主动授权后，PixoPet 才会读取支持的数据。关于数据储存、处理方式和隐私政策的完整说明，会在 App 正式发布前公布。',
-  faqQ5:'PixoPet 支持哪些设备？',faqA5:'我们正在优先准备 iPhone 版本，其他平台的支持计划目前尚未公布。',
-  faqQ6:'现在可以下载 PixoPet 吗？',faqA6:'暂时还不可以。你可以先加入 iPhone 候补名单，首个版本开放体验时，我们会第一时间告诉你。',
+  faqQ4:'我的数据会怎样被处理？',faqA4:'只有在你主动授权后，PixoPet 才会读取支持的数据。你可以随时在 iPhone 中查看和管理这些权限。',
+  faqQ5:'PixoPet 支持哪些设备？',faqA5:'PixoPet 现已支持 iPhone，其他平台的支持计划目前尚未公布。',
+  faqQ6:'现在可以下载 PixoPet 吗？',faqA6:'可以。PixoPet iPhone 版现已上线。',
   faqQ7:'PixoPet 是医疗或诊断工具吗？',faqA7:'不是。PixoPet 是一个帮助你感受日常活动与成长变化的陪伴体验，不能用于诊断、治疗，也不能替代专业医疗建议。'
 });
 
@@ -101,27 +99,12 @@ const filmModal=document.querySelector('.film-modal');
 const filmVideo=filmModal.querySelector('video');
 const toast=document.querySelector('#toast');
 const cursorAura=document.querySelector('.cursor-aura');
-const waitlistForm=document.querySelector('[data-waitlist-form]');
-const waitlistEmail=document.querySelector('[data-waitlist-email]');
-const siteMusic=document.querySelector('#site-music');
-const musicToggle=document.querySelector('[data-music-toggle]');
-const musicLabel=document.querySelector('[data-music-label]');
 const energyOptions=[...document.querySelectorAll('[data-energy-option]')];
 const energyPhonePanels=[...document.querySelectorAll('[data-energy-phone]')];
 heroVideo.loop=true;
 filmVideo.loop=true;
 let currentLanguage=localStorage.getItem('pixopet-language')||'en';
 let toastTimer;
-
-function updateMusicButton(){
-  if(!siteMusic||!musicToggle)return;
-  const isPlaying=!siteMusic.paused;
-  const label=(translations[currentLanguage]||translations.en)[isPlaying?'musicPause':'musicPlay'];
-  musicToggle.classList.toggle('is-playing',isPlaying);
-  musicToggle.setAttribute('aria-pressed',String(isPlaying));
-  musicToggle.setAttribute('aria-label',label);
-  if(musicLabel)musicLabel.textContent=label;
-}
 
 function applyLanguage(language){
   const copy=translations[language]||translations.en;
@@ -133,14 +116,13 @@ function applyLanguage(language){
   placeholderTranslatable.forEach(element=>{const value=copy[element.dataset.i18nPlaceholder];if(typeof value==='string')element.setAttribute('placeholder',value)});
   languageButtons.forEach(button=>{const active=button.dataset.language===language;button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active))});
   energyOptions.forEach(button=>{const label=copy[button.dataset.energyLabel];if(label)button.setAttribute('aria-label',label)});
-  document.querySelectorAll('[data-waitlist]').forEach(button=>button.setAttribute('aria-label',copy.downloadIphone||copy.download));
+  document.querySelectorAll('[data-download],[data-app-store-link]').forEach(button=>button.setAttribute('aria-label',copy.downloadIphone||copy.download));
   energyPhonePanels.forEach(panel=>{const english=language==='en';const source=english?panel.dataset.srcEn:panel.dataset.srcZh;const alt=english?panel.dataset.altEn:panel.dataset.altZh;if(source&&panel.getAttribute('src')!==source)panel.setAttribute('src',source);if(alt)panel.setAttribute('alt',alt)});
   localStorage.setItem('pixopet-language',language);
-  updateMusicButton();
 }
 
 function showToast(message){toast.textContent=message;toast.classList.add('is-visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('is-visible'),3200)}
-function openWaitlist(){showToast(translations[currentLanguage].waitlistOpen||translations.en.downloadText);document.querySelector('#download')?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});setTimeout(()=>waitlistEmail?.focus({preventScroll:true}),650)}
+function openDownload(){document.querySelector('#download')?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'})}
 function setHowStep(step){howTabs.forEach(tab=>{const active=tab.dataset.how===step;tab.classList.toggle('is-active',active);tab.setAttribute('aria-selected',String(active))});howPanels.forEach(panel=>panel.classList.toggle('is-active',panel.dataset.howPanel===step))}
 function setEnergyState(state,{focus=false}={}){
   energyOptions.forEach(button=>{const active=button.dataset.energyOption===state;button.classList.toggle('is-active',active);button.setAttribute('aria-checked',String(active));button.tabIndex=active?0:-1;if(active&&focus)button.focus({preventScroll:true})});
@@ -222,24 +204,7 @@ energyOptions.forEach((button,index)=>{
   button.addEventListener('click',()=>setEnergyState(button.dataset.energyOption));
   button.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(event.key))return;event.preventDefault();const direction=event.key==='ArrowLeft'||event.key==='ArrowUp'?-1:1;const next=(index+direction+energyOptions.length)%energyOptions.length;setEnergyState(energyOptions[next].dataset.energyOption,{focus:true})});
 });
-document.querySelectorAll('[data-waitlist]').forEach(button=>button.addEventListener('click',openWaitlist));
-if(siteMusic&&musicToggle){
-  siteMusic.volume=.42;
-  musicToggle.addEventListener('click',async()=>{if(siteMusic.paused){try{await siteMusic.play()}catch{} }else siteMusic.pause();updateMusicButton()});
-  siteMusic.addEventListener('play',updateMusicButton);
-  siteMusic.addEventListener('pause',updateMusicButton);
-  const retryEvents=['pointerdown','touchstart','wheel','keydown'];
-  const removeMusicRetries=()=>retryEvents.forEach(type=>removeEventListener(type,retryMusicFromInteraction,true));
-  const retryMusicFromInteraction=event=>{
-    if(event.target?.closest?.('[data-music-toggle]'))return;
-    siteMusic.play().then(removeMusicRetries).catch(updateMusicButton);
-  };
-  retryEvents.forEach(type=>addEventListener(type,retryMusicFromInteraction,{capture:true,passive:true}));
-  addEventListener('load',()=>siteMusic.play().then(removeMusicRetries).catch(updateMusicButton),{once:true});
-}
-waitlistForm?.addEventListener('submit',event=>{event.preventDefault();if(!waitlistForm.reportValidity())return;sessionStorage.setItem('pixopet-waitlist-preview',waitlistEmail.value.trim());waitlistForm.classList.add('is-saved');showToast(translations[currentLanguage].waitlistSaved)});
-waitlistEmail?.addEventListener('invalid',()=>showToast(translations[currentLanguage].waitlistInvalid||'Please enter a valid email address'));
-siteMusic?.addEventListener('error',()=>showToast(translations[currentLanguage].musicError||'Music is temporarily unavailable'));
+document.querySelectorAll('[data-download]').forEach(button=>button.addEventListener('click',openDownload));
 document.querySelectorAll('video').forEach(video=>video.addEventListener('error',()=>{video.classList.add('is-failed');video.parentElement?.classList.add('has-video-error');showToast(translations[currentLanguage].videoError||'Video could not be loaded')}));
 document.querySelectorAll('[data-open-film]').forEach(button=>button.addEventListener('click',()=>{filmModal.classList.add('is-open');filmModal.setAttribute('aria-hidden','false');filmVideo.play().catch(()=>{})}));
 document.querySelector('.film-close').addEventListener('click',closeFilm);
