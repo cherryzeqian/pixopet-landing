@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#f5ffff">
   <title>PixoPet | Live Better Grow Faster</title>
   <link rel="icon" href="assets/AppIcon-1024.png">
-  <link rel="stylesheet" href="styles.css?v=59">
+  <link rel="stylesheet" href="styles.css?v=layout2">
 </head>
 <body>
   <div class="cursor-aura" aria-hidden="true"></div>
@@ -18,17 +18,23 @@
   </header>
 
   <main id="top">
+    <div class="pet-scroll-track">
     <section class="hero">
       <div class="ambient ambient-left"></div><div class="ambient ambient-right"></div>
       <img class="hero-phone-mockup hero-phone-zh" src="assets/pixopet-phone-mockup.png" alt="PixoPet 中文版 iPhone 界面">
       <img class="hero-phone-mockup hero-phone-en" src="assets/pixopet-phone-mockup-en.png" alt="PixoPet English iPhone interface">
-      <div class="pointer-pets-pilot" data-pointer-pets data-pointer-state="center" aria-hidden="true"><div class="pointer-pets-atlas" data-pointer-pets-atlas></div></div>
+      <div class="pointer-pets-pilot" data-scroll-pets aria-hidden="true">
+        <img style="inset:auto;right:8%;bottom:0;width:auto;height:115%" src="dog-pilot/follow-seated/rest-hd.webp" alt="">
+        <img style="inset:auto;right:46%;bottom:16%;width:44%;height:auto" src="dog-pilot/follow-seated/sleeping-cat.webp" alt="">
+      </div>
       <div class="hero-copy" data-reveal>
         <h1 data-i18n="heroTitle">Live Better<br>Grow Faster</h1>
         <p class="hero-lead" data-i18n="heroText">Turn sleep, focus, and movement into energy for a digital companion that grows with you.</p>
         <div class="hero-actions"><button class="app-store-button hero-app-store-button" type="button" data-download aria-label="Download PixoPet for iPhone"><img src="assets/download-on-app-store.png" alt="Download on the App Store"></button></div>
       </div>
     </section>
+
+    </div>
 
     <section class="proof-section" aria-labelledby="proof-title">
       <div class="proof-inner" data-reveal>
@@ -123,7 +129,7 @@
           <article class="quote-card"><header><img class="avatar avatar-photo" src="assets/avatar-chloe.jpg" alt="Avatar for Chloe"><div><strong>Chloe</strong><small data-i18n="userRole">PixoPet user</small></div></header><p data-i18n="quoteChloe">It is weirdly motivating without constantly reminding me to be motivated. That is probably why I keep coming back.</p></article>
           <article class="quote-card"><header><img class="avatar avatar-photo" src="assets/avatar-alex.jpg" alt="Avatar for Alex"><div><strong>Alex</strong><small data-i18n="userRole">PixoPet user</small></div></header><p data-i18n="quoteAlex">My step count used to be a number I ignored. Now I am curious what it will turn into next.</p></article>
         </div>
-        <p class="preview-note" data-i18n="previewNote">Sample feedback for layout preview. Replace with confirmed user quotes before launch.</p>
+        <!-- Layout examples. Confirm feedback and permission before representing quotes as verified. -->
       </div>
     </section>
 
@@ -152,6 +158,11 @@
   <footer><a class="brand brand-light" href="#top"><img src="assets/brand-icon.png" alt="" width="36" height="36"><span>PixoPet</span></a><p class="footer-tagline" data-i18n="footerTagline">Live Better<br>Grow Faster</p><p class="footer-copyright">© 2026 PixoPet</p></footer>
   <div class="film-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="PixoPet launch film"><button class="film-close" type="button" aria-label="Close film">×</button><img class="video-poster-fallback" src="assets/pixopet-launch-first-frame.jpg" alt="PixoPet launch film opening frame"><video controls loop playsinline poster="assets/pixopet-launch-first-frame.jpg"><source src="assets/pixopet-launch-en.mp4" type="video/mp4"></video></div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="script.js?v=60"></script>
+  <script src="script.js?v=layout2"></script>
+  <script type="module">
+    import {mount} from './dog-pilot/follow.js?v=detail2';
+    const stage=document.querySelector('[data-scroll-pets]');
+    if(stage) mount(stage,'seated');
+  </script>
 </body>
 </html>

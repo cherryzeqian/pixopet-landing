@@ -122,7 +122,7 @@ function applyLanguage(language){
 }
 
 function showToast(message){toast.textContent=message;toast.classList.add('is-visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('is-visible'),3200)}
-function openDownload(){document.querySelector('#download')?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'})}
+function openDownload(){document.querySelector('#download')?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})}
 function setHowStep(step){howTabs.forEach(tab=>{const active=tab.dataset.how===step;tab.classList.toggle('is-active',active);tab.setAttribute('aria-selected',String(active))});howPanels.forEach(panel=>panel.classList.toggle('is-active',panel.dataset.howPanel===step))}
 function setEnergyState(state,{focus=false}={}){
   energyOptions.forEach(button=>{const active=button.dataset.energyOption===state;button.classList.toggle('is-active',active);button.setAttribute('aria-checked',String(active));button.tabIndex=active?0:-1;if(active&&focus)button.focus({preventScroll:true})});
@@ -153,49 +153,73 @@ function initPointerPetsPilot(){
   const atlas=document.querySelector('[data-pointer-pets-atlas]');
   const hero=document.querySelector('.hero');
   if(!stage||!atlas||!hero||!matchMedia('(pointer: fine)').matches||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  const frames={center:[0,0],up:[1,0],upRight:[2,0],right:[0,1],downRight:[1,1],down:[2,1],downLeft:[0,2],left:[1,2],upLeft:[2,2]};
-  const atlasImage=new Image();atlasImage.src='assets/pointer-pets-9way.webp';atlasImage.decode?.().catch(()=>{});
-  let targetX=0,targetY=0,currentX=0,currentY=0,currentState='center',pendingState='center',pendingFrames=0,animationFrame=0;
-  const directionFor=(x,y)=>{
-    if(Math.hypot(x,y)<.2)return'center';
-    const angle=Math.atan2(y,x)*180/Math.PI;
-    if(angle>=-22.5&&angle<22.5)return'right';
-    if(angle>=22.5&&angle<67.5)return'downRight';
-    if(angle>=67.5&&angle<112.5)return'down';
-    if(angle>=112.5&&angle<157.5)return'downLeft';
-    if(angle>=157.5||angle<-157.5)return'left';
-    if(angle>=-157.5&&angle<-112.5)return'upLeft';
-    if(angle>=-112.5&&angle<-67.5)return'up';
-    return'upRight';
+  const canvas=document.createElement('canvas');
+  canvas.className='pointer-pets-canvas';
+  stage.append(canvas);
+  const context=canvas.getContext('2d',{alpha:true});
+  const atlasImage=new Image();
+  atlasImage.src='assets/pointer-pets-25way.webp';
+  let imageReady=false;
+  let targetX=0,targetY=0,currentX=0,currentY=0,currentState='r2c2',poseColumn=2,poseRow=2,animationFrame=0,isVisible=true;
+  const syncCanvasSize=()=>{
+    const rect=stage.getBoundingClientRect();
+    const pixelRatio=Math.min(devicePixelRatio||1,1.7);
+    const width=Math.max(1,Math.round(rect.width*pixelRatio));
+    const height=Math.max(1,Math.round(rect.height*pixelRatio));
+    if(canvas.width!==width||canvas.height!==height){canvas.width=width;canvas.height=height;context.imageSmoothingEnabled=true;context.imageSmoothingQuality='high'}
   };
-  const showState=state=>{
-    if(state===currentState)return;
-    const [column,row]=frames[state];
-    atlas.style.backgroundPosition=`${column*50}% ${row*50}%`;
-    currentState=state;
-    stage.dataset.pointerState=state;
+  const drawFrame=(column,row,opacity)=>{
+    if(opacity<=.001)return;
+    const cellWidth=atlasImage.naturalWidth/5,cellHeight=atlasImage.naturalHeight/5;
+    context.globalAlpha=opacity;
+    context.drawImage(atlasImage,column*cellWidth,row*cellHeight,cellWidth,cellHeight,0,0,canvas.width,canvas.height);
+  };
+  const drawPose=(column,row)=>{
+    if(!imageReady)return;
+    context.clearRect(0,0,canvas.width,canvas.height);
+    drawFrame(column,row,1);
+    context.globalAlpha=1;
+    context.globalCompositeOperation='source-over';
+  };
+  const selectPose=(position,current)=>{
+    // A small dead zone prevents rapid frame chatter when the pointer sits on
+    // a pose boundary. Frames stay sharp instead of cross-fading two faces.
+    while(current<4&&position>current+.62)current+=1;
+    while(current>0&&position<current-.62)current-=1;
+    return current;
   };
   const render=()=>{
-    currentX+=(targetX-currentX)*.18;
-    currentY+=(targetY-currentY)*.18;
-    const candidate=directionFor(currentX,currentY);
-    if(candidate===pendingState)pendingFrames+=1;else{pendingState=candidate;pendingFrames=1}
-    if(pendingFrames>=2)showState(candidate);
-    if(Math.abs(targetX-currentX)>.008||Math.abs(targetY-currentY)>.008)animationFrame=requestAnimationFrame(render);else animationFrame=0;
+    currentX+=(targetX-currentX)*.12;
+    currentY+=(targetY-currentY)*.12;
+    poseColumn=selectPose(Math.max(0,Math.min(4,(currentX+1)*2)),poseColumn);
+    poseRow=selectPose(Math.max(0,Math.min(4,(currentY+1)*2)),poseRow);
+    const nextState=`r${poseRow}c${poseColumn}`;
+    if(nextState!==currentState){currentState=nextState;stage.dataset.pointerState=currentState}
+    drawPose(poseColumn,poseRow);
+    const isMoving=Math.abs(targetX-currentX)>.002||Math.abs(targetY-currentY)>.002;
+    if(isVisible&&isMoving)animationFrame=requestAnimationFrame(render);else animationFrame=0;
   };
-  const requestRender=()=>{if(!animationFrame)animationFrame=requestAnimationFrame(render)};
+  const requestRender=()=>{if(isVisible&&!animationFrame)animationFrame=requestAnimationFrame(render)};
   const move=event=>{
+    if(!isVisible)return;
     const rect=stage.getBoundingClientRect();
     const centerX=rect.left+rect.width*.5;
     const centerY=rect.top+rect.height*.5;
-    targetX=Math.max(-1,Math.min(1,(event.clientX-centerX)/(innerWidth*.42)));
-    targetY=Math.max(-1,Math.min(1,(event.clientY-centerY)/(innerHeight*.42)));
+    const deltaX=event.clientX-centerX;
+    const deltaY=event.clientY-centerY;
+    const horizontalRange=deltaX<0?centerX:innerWidth-centerX;
+    const verticalRange=deltaY<0?centerY:innerHeight-centerY;
+    targetX=Math.max(-1,Math.min(1,deltaX/Math.max(1,horizontalRange)));
+    targetY=Math.max(-1,Math.min(1,deltaY/Math.max(1,verticalRange)));
     requestRender();
   };
   addEventListener('pointermove',move,{passive:true});
   addEventListener('pointerdown',move,{passive:true});
   document.documentElement.addEventListener('pointerleave',()=>{targetX=0;targetY=0;requestRender()});
   document.addEventListener('visibilitychange',()=>{if(document.hidden){targetX=0;targetY=0;requestRender()}});
+  new IntersectionObserver(entries=>{isVisible=Boolean(entries[0]?.isIntersecting);if(isVisible)requestRender()},{rootMargin:'120px'}).observe(stage);
+  new ResizeObserver(()=>{if(imageReady){syncCanvasSize();drawPose(poseColumn,poseRow)}}).observe(stage);
+  atlasImage.decode?.().then(()=>{imageReady=true;syncCanvasSize();drawPose(2,2);canvas.classList.add('is-ready');atlas.classList.add('is-hidden');stage.classList.add('is-ready')}).catch(()=>{stage.dataset.pointerFallback='static';canvas.remove()});
 }
 
 languageButtons.forEach(button=>button.addEventListener('click',()=>applyLanguage(button.dataset.language)));
@@ -213,4 +237,27 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape')closeFilm()}
 function closeFilm(){filmModal.classList.remove('is-open');filmModal.setAttribute('aria-hidden','true');filmVideo.pause()}
 videoToggle.addEventListener('click',()=>{if(heroVideo.paused){heroVideo.play();videoToggle.textContent='Ⅱ';videoToggle.setAttribute('aria-label','Pause background video')}else{heroVideo.pause();videoToggle.textContent='▶';videoToggle.setAttribute('aria-label','Play background video')}});
 addEventListener('scroll',updateParallax,{passive:true});
-applyLanguage(currentLanguage);setHowStep('hatch');setEnergyState('move');updateParallax();initCursorAura();initPointerPetsPilot();
+applyLanguage(currentLanguage);setHowStep('hatch');setEnergyState('move');updateParallax();initCursorAura();
+
+// Tall chapters land at their introduction. Native snap lets readers scroll inside them.
+const readableChapters = document.querySelectorAll('.voices-section,.faq-section');
+const siteHeader = document.querySelector('.site-header');
+function sizeReadingChapters() {
+  const usableHeight = document.documentElement.clientHeight - siteHeader.offsetHeight;
+  for (const chapter of readableChapters) {
+    chapter.classList.toggle('is-tall-chapter', chapter.offsetHeight > usableHeight + 1);
+  }
+}
+const chapterResize = new ResizeObserver(sizeReadingChapters);
+for (const chapter of readableChapters) chapterResize.observe(chapter);
+chapterResize.observe(siteHeader);
+window.addEventListener('resize', sizeReadingChapters);
+sizeReadingChapters();
+
+// The download section and the localized footer share the final viewport.
+const siteFooter = document.querySelector('body > footer');
+function measureFooter() {
+  document.documentElement.style.setProperty('--footer-height', siteFooter.getBoundingClientRect().height + 'px');
+}
+new ResizeObserver(measureFooter).observe(siteFooter);
+measureFooter();
