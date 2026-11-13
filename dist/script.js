@@ -14,7 +14,6 @@ translations.en.energyMoveLabel='View movement data';
 translations.en.energySleepLabel='View sleep data';
 translations.en.energyFocusLabel='View focus data';
 translations.en.creatorRole='Creator';
-translations.en.reviewerRole='App Store reviewer';
 translations.en.howKicker='01 HOW IT WORKS';
 translations.en.journalKicker='03 SHARED MEMORIES';
 translations.en.favoriteDay='A FAVORITE<br>DAY';
@@ -35,13 +34,8 @@ Object.assign(translations.en,{
   downloadTitle:'Download PixoPet',downloadText:'PixoPet is available now on iPhone.'
 });
 Object.assign(translations.en,{
-  voicesKicker:'04 FROM CREATORS AND USERS',voicesTitle:'In their own words',
-  voicesIntro:'Notes from the creators, followed by excerpts from real App Store reviews that were lightly edited for length.',
-  reviewerRole:'App Store reviewer',
-  reviewSpace:'Love the app! Just a couple of ideas: please let us unlock the same achievement more than once, and add a way to undo an unlock if it happened by accident. It’d also be great if sharing generated a scrapbook link so friends could enjoy these fun moments too.',
-  reviewRain:'This app has a great design and is perfect for recording life events. I’d especially like to create custom categories, or rename the ones already in the app—that would make it much more fun to use.',
-  review579:'After a rough breakup, I realized I needed to enrich my life and start a journey of self-improvement. Now I record the things I’ve never done, never thought of, or didn’t dare to imagine. The app is a joy to use—thank you to the developers!',
-  reviewNanyi:'I’d been thinking about keeping track of my little “highlights” and things I’m looking forward to experiencing. I never expected someone would actually make an app like this—it was a real surprise. The interface is clean and beautiful, and it feels great to use.'
+  voicesKicker:'04 WHY WE MADE PIXOPET',voicesTitle:'From the creators',
+  voicesIntro:'Why we wanted everyday effort to feel less like a score and more like a relationship that grows with you.'
 });
 translations.zh.signalKicker='02 日常能量';
 translations.zh.signalTitle='你度过的一天，<br>成为它成长的<br>能量';
@@ -88,13 +82,8 @@ Object.assign(translations.zh,{
   videoError:'视频加载失败，请稍后再试',footerTagline:'享受生活，享受成长'
 });
 Object.assign(translations.zh,{
-  voicesKicker:'04 创作者与真实用户',voicesTitle:'听听他们怎么说',
-  voicesIntro:'先听听创作者为什么做 PixoPet，再读读真实 App Store 评价。用户评价仅为页面长度做了删节。',
-  reviewerRole:'App Store 用户',
-  reviewSpace:'希望可以重复达成同一项成就，也可以在误触后取消已达成状态。还希望分享可以做成卡册链接，让朋友也能看到这些好玩的事。',
-  reviewRain:'这款 App 颜值很高，很适合用来记录人生事件。特别希望增加自定义类别的功能，或者支持修改 App 里已有类别的名字，这样可玩性会高很多。',
-  review579:'经历了一段失败的情感后，我发现必须让自己丰富起来，开启自我提升的旅程——每天记录以前没做过、没想过或不敢想的事情。这个 App 真的是赏心悦目，感谢开发者！',
-  reviewNanyi:'之前就想过记录自己一些小小的“高光时刻”，以及一些期待体验的东西，没想到真的有开发者做了这样的软件，非常惊喜。页面设计简洁美观，体验感很好。'
+  voicesKicker:'04 为什么做 PIXOPET',voicesTitle:'来自创作者的话',
+  voicesIntro:'我们希望日常努力不再像一张成绩单，而是一段会陪着你慢慢成长的关系。'
 });
 Object.assign(translations.zh,{
   faqKicker:'05 常见问题',faqTitle:'你可能还想知道这些',faqIntro:'下载之前，先把重要的问题说清楚。',
