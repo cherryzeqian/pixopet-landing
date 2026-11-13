@@ -35,8 +35,8 @@ Object.assign(translations.en,{
   downloadTitle:'Download PixoPet',downloadText:'PixoPet is available now on iPhone.'
 });
 Object.assign(translations.en,{
-  voicesKicker:'04 REAL APP STORE REVIEWS',voicesTitle:'In their own words',
-  voicesIntro:'Excerpts from real App Store reviews, lightly edited for length.',
+  voicesKicker:'04 FROM CREATORS AND USERS',voicesTitle:'In their own words',
+  voicesIntro:'Notes from the creators, followed by excerpts from real App Store reviews that were lightly edited for length.',
   reviewerRole:'App Store reviewer',
   reviewSpace:'Love the app! Just a couple of ideas: please let us unlock the same achievement more than once, and add a way to undo an unlock if it happened by accident. It’d also be great if sharing generated a scrapbook link so friends could enjoy these fun moments too.',
   reviewRain:'This app has a great design and is perfect for recording life events. I’d especially like to create custom categories, or rename the ones already in the app—that would make it much more fun to use.',
@@ -88,8 +88,8 @@ Object.assign(translations.zh,{
   videoError:'视频加载失败，请稍后再试',footerTagline:'享受生活，享受成长'
 });
 Object.assign(translations.zh,{
-  voicesKicker:'04 真实用户评价',voicesTitle:'听听他们怎么说',
-  voicesIntro:'以下内容节选自真实 App Store 评价，仅为页面长度做了删节。',
+  voicesKicker:'04 创作者与真实用户',voicesTitle:'听听他们怎么说',
+  voicesIntro:'先听听创作者为什么做 PixoPet，再读读真实 App Store 评价。用户评价仅为页面长度做了删节。',
   reviewerRole:'App Store 用户',
   reviewSpace:'希望可以重复达成同一项成就，也可以在误触后取消已达成状态。还希望分享可以做成卡册链接，让朋友也能看到这些好玩的事。',
   reviewRain:'这款 App 颜值很高，很适合用来记录人生事件。特别希望增加自定义类别的功能，或者支持修改 App 里已有类别的名字，这样可玩性会高很多。',
