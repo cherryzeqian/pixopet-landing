@@ -387,11 +387,9 @@ main .hero-copy{padding-block:0}
 .journal-collage .memory-note{position:relative;inset:auto;grid-column:2/4;justify-self:end;width:min(100%,265px);padding:14px 20px}
 .voices-section,.faq-section{min-height:0;display:block}
 .voices-intro:empty{display:none}
-.quote-grid{display:block;columns:3;column-gap:18px;margin-top:var(--content-gap)}
-.quote-grid .quote-card{display:inline-block;vertical-align:top;width:100%;margin:0 0 18px;break-inside:avoid;padding:clamp(18px,2vw,25px)}
+.quote-grid{display:block;columns:3;--review-gap:8px;column-gap:var(--review-gap);margin-top:var(--content-gap)}
+.quote-grid .quote-card{display:block;width:100%;margin:0 0 var(--review-gap);break-inside:avoid;padding:clamp(18px,2vw,25px)}
 .quote-card>p{font-size:clamp(15px,1.16vw,18px);line-height:1.56;margin-top:16px}
-.quote-grid.voices-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;columns:auto}
-.voices-grid .quote-card{display:block;margin:0}
 .faq-inner{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start;gap:var(--content-gap)}
 .faq-header{position:static}
 .faq-list{margin:0}
@@ -424,7 +422,6 @@ main section[id]{scroll-margin-top:0}
 }
 @media(max-width:1000px){
   .quote-grid{columns:2}
-  .quote-grid.voices-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .journal-section{display:grid;grid-template-columns:1fr}
   .journal-heading{max-width:100%}
   .journal-collage{max-width:740px;margin:auto}
@@ -446,7 +443,7 @@ main section[id]{scroll-margin-top:0}
   .journal-collage .memory-card img{aspect-ratio:1.4}
   .film-section{min-height:auto}
 }
-@media(max-width:600px){.quote-grid{columns:1}.quote-grid.voices-grid{grid-template-columns:1fr}body>footer{flex-wrap:wrap;row-gap:12px}}
+@media(max-width:600px){.quote-grid{columns:1}body>footer{flex-wrap:wrap;row-gap:12px}}
 @media(min-width:761px){
   .journal-collage .card-cat h3{padding-inline-start:12px}
   .journal-collage .memory-card{width:100%}

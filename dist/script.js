@@ -35,15 +35,15 @@ Object.assign(translations.en,{
 });
 Object.assign(translations.en,{
   voicesKicker:'04 WHY PIXOPET',voicesTitle:'From the idea to everyday life',
-  voicesIntro:'Two notes from the creators, followed by seven sample experience stories. We will replace the samples with confirmed user quotes before launch.',
-  previewRole:'Sample experience',previewName1:'Early preview 01',previewName2:'Early preview 02',previewName3:'Early preview 03',previewName4:'Early preview 04',previewName5:'Early preview 05',previewName6:'Early preview 06',previewName7:'Early preview 07',
-  quotePreview1:'I just wanted to see what changes had happened with my PixoPet today, but then I realized I’ve actually been sleeping more regularly these past few days and walking a bit more. It’s so much easier than staring at a bunch of numbers.',
-  quotePreview2:'What I like best is that I don’t have to track these things separately. Sleep, focus, and walking happen naturally anyway, and when I open PixoPet, I can see how these daily activities turn into growth energy for my pet.',
-  quotePreview3:'Some days I only walk for ten minutes or manage to complete a small task. PixoPet still turns these little things into visible progress, so I don’t feel like I’ve failed again today.',
-  quotePreview4:'I turned a photo I really love into my own pet with PixoPet. It’s not just a default character. Seeing it grow little by little as part of my daily life makes me feel like this companionship truly belongs to me.',
-  quotePreview5:'I care a lot about my health data, so it’s important that I can decide for myself what to connect. I choose whether to share sleep, focus, and movement, and I can always adjust those choices in my iPhone settings.',
-  quotePreview6:'Instead of just staring at a single number each day, I love how PixoPet turns walks and little milestones into a shared adventure with my digital pet. Looking back after a few weeks, I’m surprised by how many memories we’ve collected together.',
-  quotePreview7:'It doesn’t constantly push me to reach my goals. Sometimes, just going to bed a little earlier or walking a little farther can make a difference. This kind of encouragement feels just right and doesn’t put pressure on me.'
+  voicesIntro:'A walk to breakfast or a few minutes of focus can help your pet grow. Here’s what that can look like.',
+  previewRole:'Life with PixoPet',
+  quotePreview1:"Walked to the bakery and back. Apparently that counts toward raising a dog. Same time tomorrow then :)",
+  quotePreview2:"My last habit app had me copying my step count into a little box. By Friday I was trying to remember Tuesday. Now I open this on Sundays and spend the energy I’ve saved up. That’s about my speed.",
+  quotePreview3:"Spent twenty minutes in Focus editing my résumé. Still need a job. The cat, however, got paid.",
+  quotePreview4:"Hundreds of perfectly good cat photos and I picked the one of her wedged in a delivery box. Sent my mum the original and the pet side by side. She recognised the box first.",
+  quotePreview5:"I only connected steps. Still thinking about sharing sleep data, so I left that one off. Glad I could start small.",
+  quotePreview6:"I keep coming back to the postcards. Any chance we could put four favourites on one sheet? I have a little paper journal and an extremely specific plan for the empty page at the back.",
+  quotePreview7:"Checked on the cat before I checked the time. In my defence it was Saturday."
 });
 translations.zh.signalKicker='02 日常能量';
 translations.zh.signalTitle='你度过的一天，<br>成为它成长的<br>能量';
@@ -91,15 +91,15 @@ Object.assign(translations.zh,{
 });
 Object.assign(translations.zh,{
   voicesKicker:'04 为什么是 PIXOPET',voicesTitle:'从创作初衷到日常体验',
-  voicesIntro:'两位创作者的初衷，以及七段根据产品体验撰写的示例反馈。正式发布前，我们会用经过确认的用户原话替换示例文案。',
-  previewRole:'示例体验文案',previewName1:'早期体验 01',previewName2:'早期体验 02',previewName3:'早期体验 03',previewName4:'早期体验 04',previewName5:'早期体验 05',previewName6:'早期体验 06',previewName7:'早期体验 07',
-  quotePreview1:'我原来只是想看看宠物今天有什么变化，后来才发现，自己这几天确实睡得更规律，也多走了一点。比盯着一堆数字轻松多了。',
-  quotePreview2:'我最喜欢的是不用再多记一次。睡眠、专注和走路本来就会发生，打开 PixoPet 就能看到这些日常活动变成宠物的成长能量。',
-  quotePreview3:'有些日子我只走了十分钟，或者认真做完一小段工作。PixoPet 还是会把这些小事变成看得见的进步，不会让我觉得今天又失败了。',
-  quotePreview4:'我用一张很喜欢的照片做了自己的宠物。它不只是一个默认角色，看见它因为我的日常一点点长大，会觉得这段陪伴真的属于我。',
-  quotePreview5:'我很在意健康数据，所以可以自己决定连接哪些内容这一点很重要。睡眠、专注和运动都由我选择，想改也能回到 iPhone 设置里调整。',
-  quotePreview6:'比起每天只看一个数字，我更喜欢 PixoPet 把散步和小进步变成我们一起走过的故事。过一阵子再回头看，才发现原来已经留下了这么多回忆。',
-  quotePreview7:'它不会一直催我完成目标。有时只是早点睡，或者多走一小段，也会有一点变化。这样的鼓励刚刚好，不会让我有压力。'
+  voicesIntro:'下楼买个早饭，或是坐下来专心做一会儿事，这些小事都能帮你养大一只桌宠。',
+  previewRole:'PixoPet 日常',
+  quotePreview1:"下楼买了俩包子，回来发现这几百步也能拿来养狗。行，明早还去。",
+  quotePreview2:"之前用过一个要手填步数的 App。头两天记得，第三天忘了，周末还得翻手机补作业。现在我就周末打开看看，把攒的能量分一分。这个频率挺适合我。",
+  quotePreview3:"开专注模式改了二十分钟简历。简历还没改完，猫先领工资了哈哈。",
+  quotePreview4:"相册里明明有几百张正脸照，最后选的还是我家猫趴在快递盒里那张。我妈一眼就认出是哪个盒子。",
+  quotePreview5:"装好先只开了步数，睡眠那项我想了想还是先放着。能自己选，这点我挺喜欢。",
+  quotePreview6:"我挺喜欢翻这些小卡片的。要是能把最喜欢的几张排在一张纸上就好了，打印店洗一张，正好塞进我的手帐。",
+  quotePreview7:"醒来先看了眼猫，才想起来看几点。周六嘛。"
 });
 Object.assign(translations.zh,{
   faqKicker:'05 常见问题',faqTitle:'你可能还想知道这些',faqIntro:'下载之前，先把重要的问题说清楚。',
